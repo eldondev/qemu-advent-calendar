@@ -1,16 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=540, initial-scale=1"/>
 
-    <title>QEMU Advent Calendar 2014</title>
+    <title>QEMU Advent Calendar 2016</title>
 
-    <link rel="alternate" type="application/rss+xml" title="RSS" href="http://qemu-advent-calendar.org/feed.rss" />
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="css/custom.css" rel="stylesheet"/>
 
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/custom.css" rel="stylesheet">
+    <script>
+     var preload_zonk = new Image();
+     preload_zonk.src = 'images/zonk.png';
+     function zonk(id)
+     {
+          document.getElementById('img-' + id).src='images/zonk.png';
+          document.getElementById('desc-' + id).innerHTML='Please do not open the doors too early!';
+     }
+     </script>
+
   </head>
 
   <body>
@@ -31,40 +40,40 @@
             <div id="navbar" class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
                 <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">2014<span class="caret"></span></a>
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">2016<span class="caret"></span></a>
                   <ul class="dropdown-menu" role="menu">
                     <li><a href="http://www.qemu-advent-calendar.org/2014/">2014</a></li>
                     <li><a href="http://www.qemu-advent-calendar.org/2016/">2016</a></li>
                   </ul>
                 </li>
-                <li class="active"><a href="#">Home</a></li>
+                <li class="active"><a href="#day-1">Current day</a></li>
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Jump to day <span class="caret"></span></a>
                   <ul class="dropdown-menu" role="menu">
-                    <li><a href="#day-1">1 - Slacker's time travel</a></li>
-                    <li><a href="#day-2">2 - Modern DOS</a></li>
-                    <li><a href="#day-3">3 - Bootable Pi</a></li>
-                    <li><a href="#day-4">4 - Can't spell Christmas without ST</a></li>
-                    <li><a href="#day-5">5 - 64-bit ARM has landed</a></li>
-                    <li><a href="#day-6">6 - 512 byte Julia fractal</a></li>
-                    <li><a href="#day-7">7 - MINIX 3 under the Christmas tree</a></li>
-                    <li><a href="#day-8">8 - Unlikely marriage of UEFI and Zork</a></li>
-                    <li><a href="#day-9">9 - Ubuntu Core, a snappy holiday surprise</a></li>
-                    <li><a href="#day-10">10 - 3 x 512 byte demos</a></li>
-                    <li><a href="#day-11">11 - OSv Redis appliance</a></li>
-                    <li><a href="#day-12">12 - ETH Native Oberon</a></li>
-                    <li><a href="#day-13">13 - Second Reality</a></li>
-                    <li><a href="#day-14">14 - Multiboot "Invaders"</a></li>
-                    <li><a href="#day-15">15 - Glenda's Christmas</a></li>
-                    <li><a href="#day-16">16 - Tempest Showroom</a></li>
-                    <li><a href="#day-17">17 - ASCII art demo goodness</a></li>
-                    <li><a href="#day-18">18 - Ceph distributed storage system</a></li>
-                    <li><a href="#day-19">19 - Mandelbrot in Forth</a></li>
-                    <li><a href="#day-20">20 - HelenOS microkernel multiserver portable OS</a></li>
-                    <li><a href="#day-21">21 - Cult of the Bound Variable</a></li>
-                    <li><a href="#day-22">22 - Moon Buggy on s390</a></li>
-                    <li><a href="#day-23">23 - Got Pebble?</a></li>
-                    <li><a href="#day-24">24 - Go out with a bang</a></li>
+                    <li><a href="#day-1">1 - 2016-12-01</a></li>
+                    <li><a href="#day-2">2 - 2016-12-02</a></li>
+                    <li><a href="#day-3">3 - 2016-12-03</a></li>
+                    <li><a href="#day-4">4 - 2016-12-04</a></li>
+                    <li><a href="#day-5">5 - 2016-12-05</a></li>
+                    <li><a href="#day-6">6 - 2016-12-06</a></li>
+                    <li><a href="#day-7">7 - 2016-12-07</a></li>
+                    <li><a href="#day-8">8 - 2016-12-08</a></li>
+                    <li><a href="#day-9">9 - 2016-12-09</a></li>
+                    <li><a href="#day-10">10 - 2016-12-10</a></li>
+                    <li><a href="#day-11">11 - 2016-12-11</a></li>
+                    <li><a href="#day-12">12 - 2016-12-12</a></li>
+                    <li><a href="#day-13">13 - 2016-12-13</a></li>
+                    <li><a href="#day-14">14 - 2016-12-14</a></li>
+                    <li><a href="#day-15">15 - 2016-12-15</a></li>
+                    <li><a href="#day-16">16 - 2016-12-16</a></li>
+                    <li><a href="#day-17">17 - 2016-12-17</a></li>
+                    <li><a href="#day-18">18 - 2016-12-18</a></li>
+                    <li><a href="#day-19">19 - 2016-12-19</a></li>
+                    <li><a href="#day-20">20 - 2016-12-20</a></li>
+                    <li><a href="#day-21">21 - 2016-12-21</a></li>
+                    <li><a href="#day-22">22 - 2016-12-22</a></li>
+                    <li><a href="#day-23">23 - 2016-12-23</a></li>
+                    <li><a href="#day-24">24 - 2016-12-24</a></li>
                   </ul>
                 </li>
                 <li><a href="#about">About</a></li>
@@ -85,372 +94,407 @@
             <div class="carousel-caption">
               <img src="images/qemu-christmas.png" alt="QEMU"/>
               <h1>An amazing QEMU disk image every day!</h1>
-              <h2>Counting down the days until Christmas</h2>
-              <p>This <a href="https://en.wikipedia.org/wiki/Advent_calendar">advent calendar</a> is brought to you by the <a href="http://qemu-project.org/">QEMU community</a>.</p>
+              <h2>Brightening your days in the winter holiday season.</h2>
+              <p>
+               This advent calendar is brought to you by the
+               <a href="http://www.qemu-project.org/">QEMU community</a>.
+              </p>
             </div>
           </div>
         </div>
       </div>
     </div><!-- /.carousel -->
 
+    <div id="day-1" class="featurette">
+     <p>
+       <img id="img-day1" src="images/closed-door.png" alt="Day 1"
+        onclick="zonk('day1');" />
+     </p>
+     <h2>Day 1</h2>
+     <p id="desc-day1">
+       Image will be available on December 1st.
+     </p>
+     <p>
+       <!-- a href="download/day1.tar.xz" class="btn btn-primary btn-lg" role="button">Download</a -->
+     </p>
+    </div>
 
-    <!-- Wrap the rest of the page in another container to center all the content. -->
+    <div id="day-2" class="featurette">
+     <p>
+       <img id="img-day2" src="images/closed-door.png" alt="Day 2"
+        onclick="zonk('day2');" />
+     </p>
+     <h2>Day 2</h2>
+     <p id="desc-day2">
+       Image will be available on December 2nd.
+     </p>
+     <p>
+       <!-- a href="download/day2.tar.xz" class="btn btn-primary btn-lg" role="button">Download</a -->
+     </p>
+    </div>
+
+    <div id="day-3" class="featurette">
+     <p>
+       <img id="img-day3" src="images/closed-door.png" alt="Day 3"
+        onclick="zonk('day3');" />
+     </p>
+     <h2>Day 3</h2>
+     <p id="desc-day3">
+       Image will be available on December 3rd.
+     </p>
+     <p>
+       <!-- a href="download/day3.tar.xz" class="btn btn-primary btn-lg" role="button">Download</a -->
+     </p>
+    </div>
+
+    <div id="day-4" class="featurette">
+     <p>
+       <img id="img-day4" src="images/closed-door.png" alt="Day 4"
+        onclick="zonk('day4');" />
+     </p>
+     <h2>Day 4</h2>
+     <p id="desc-day4">
+       Image will be available on December 4th.
+     </p>
+     <p>
+       <!-- a href="download/day4.tar.xz" class="btn btn-primary btn-lg" role="button">Download</a -->
+     </p>
+    </div>
+
+    <div id="day-5" class="featurette">
+     <p>
+       <img id="img-day5" src="images/closed-door.png" alt="Day 5"
+        onclick="zonk('day5');" />
+     </p>
+     <h2>Day 5</h2>
+     <p id="desc-day5">
+       Image will be available on December 5th.
+     </p>
+     <p>
+       <!-- a href="download/day5.tar.xz" class="btn btn-primary btn-lg" role="button">Download</a -->
+     </p>
+    </div>
+
+    <div id="day-6" class="featurette">
+     <p>
+       <img id="img-day6" src="images/closed-door.png" alt="Day 6"
+        onclick="zonk('day6');" />
+     </p>
+     <h2>Day 6</h2>
+     <p id="desc-day6">
+       Image will be available on December 6th.
+     </p>
+     <p>
+       <!-- a href="download/day6.tar.xz" class="btn btn-primary btn-lg" role="button">Download</a -->
+     </p>
+    </div>
+
+    <div id="day-7" class="featurette">
+     <p>
+       <img id="img-day7" src="images/closed-door.png" alt="Day 7"
+        onclick="zonk('day7');" />
+     </p>
+     <h2>Day 7</h2>
+     <p id="desc-day7">
+       Image will be available on December 7th.
+     </p>
+     <p>
+       <!-- a href="download/day7.tar.xz" class="btn btn-primary btn-lg" role="button">Download</a -->
+     </p>
+    </div>
+
+    <div id="day-8" class="featurette">
+     <p>
+       <img id="img-day8" src="images/closed-door.png" alt="Day 8"
+        onclick="zonk('day8');" />
+     </p>
+     <h2>Day 8</h2>
+     <p id="desc-day8">
+       Image will be available on December 8th.
+     </p>
+     <p>
+       <!-- a href="download/day8.tar.xz" class="btn btn-primary btn-lg" role="button">Download</a -->
+     </p>
+    </div>
+
+    <div id="day-9" class="featurette">
+     <p>
+       <img id="img-day9" src="images/closed-door.png" alt="Day 9"
+        onclick="zonk('day9');" />
+     </p>
+     <h2>Day 9</h2>
+     <p id="desc-day9">
+       Image will be available on December 9th.
+     </p>
+     <p>
+       <!-- a href="download/day9.tar.xz" class="btn btn-primary btn-lg" role="button">Download</a -->
+     </p>
+    </div>
+
+    <div id="day-10" class="featurette">
+     <p>
+       <img id="img-day10" src="images/closed-door.png" alt="Day 10"
+        onclick="zonk('day10');" />
+     </p>
+     <h2>Day 10</h2>
+     <p id="desc-day10">
+       Image will be available on December 10th.
+     </p>
+     <p>
+       <!-- a href="download/day10.tar.xz" class="btn btn-primary btn-lg" role="button">Download</a -->
+     </p>
+    </div>
+
+    <div id="day-11" class="featurette">
+     <p>
+       <img id="img-day11" src="images/closed-door.png" alt="Day 11"
+        onclick="zonk('day11');" />
+     </p>
+     <h2>Day 11</h2>
+     <p id="desc-day11">
+       Image will be available on December 11th.
+     </p>
+     <p>
+       <!-- a href="download/day11.tar.xz" class="btn btn-primary btn-lg" role="button">Download</a -->
+     </p>
+    </div>
+
+    <div id="day-12" class="featurette">
+     <p>
+       <img id="img-day12" src="images/closed-door.png" alt="Day 12"
+        onclick="zonk('day12');" />
+     </p>
+     <h2>Day 12</h2>
+     <p id="desc-day12">
+       Image will be available on December 12th.
+     </p>
+     <p>
+       <!-- a href="download/day12.tar.xz" class="btn btn-primary btn-lg" role="button">Download</a -->
+     </p>
+    </div>
+
+    <div id="day-13" class="featurette">
+     <p>
+       <img id="img-day13" src="images/closed-door.png" alt="Day 13"
+        onclick="zonk('day13');" />
+     </p>
+     <h2>Day 13</h2>
+     <p id="desc-day13">
+       Image will be available on December 13th.
+     </p>
+     <p>
+       <!-- a href="download/day13.tar.xz" class="btn btn-primary btn-lg" role="button">Download</a -->
+     </p>
+    </div>
+
+    <div id="day-14" class="featurette">
+     <p>
+       <img id="img-day14" src="images/closed-door.png" alt="Day 14"
+        onclick="zonk('day14');" />
+     </p>
+     <h2>Day 14</h2>
+     <p id="desc-day14">
+       Image will be available on December 14th.
+     </p>
+     <p>
+       <!-- a href="download/day14.tar.xz" class="btn btn-primary btn-lg" role="button">Download</a -->
+     </p>
+    </div>
+
+    <div id="day-15" class="featurette">
+     <p>
+       <img id="img-day15" src="images/closed-door.png" alt="Day 15"
+        onclick="zonk('day15');" />
+     </p>
+     <h2>Day 15</h2>
+     <p id="desc-day15">
+       Image will be available on December 15th.
+     </p>
+     <p>
+       <!-- a href="download/day15.tar.xz" class="btn btn-primary btn-lg" role="button">Download</a -->
+     </p>
+    </div>
+
+    <div id="day-16" class="featurette">
+     <p>
+       <img id="img-day16" src="images/closed-door.png" alt="Day 16"
+        onclick="zonk('day16');" />
+     </p>
+     <h2>Day 16</h2>
+     <p id="desc-day16">
+       Image will be available on December 16th.
+     </p>
+     <p>
+       <!-- a href="download/day16.tar.xz" class="btn btn-primary btn-lg" role="button">Download</a -->
+     </p>
+    </div>
+
+    <div id="day-17" class="featurette">
+     <p>
+       <img id="img-day17" src="images/closed-door.png" alt="Day 17"
+        onclick="zonk('day17');" />
+     </p>
+     <h2>Day 17</h2>
+     <p id="desc-day17">
+       Image will be available on December 17th.
+     </p>
+     <p>
+       <!-- a href="download/day17.tar.xz" class="btn btn-primary btn-lg" role="button">Download</a -->
+     </p>
+    </div>
+
+    <div id="day-18" class="featurette">
+     <p>
+       <img id="img-day18" src="images/closed-door.png" alt="Day 18"
+        onclick="zonk('day18');" />
+     </p>
+     <h2>Day 18</h2>
+     <p id="desc-day18">
+       Image will be available on December 18th.
+     </p>
+     <p>
+       <!-- a href="download/day18.tar.xz" class="btn btn-primary btn-lg" role="button">Download</a -->
+     </p>
+    </div>
+
+    <div id="day-19" class="featurette">
+     <p>
+       <img id="img-day19" src="images/closed-door.png" alt="Day 19"
+        onclick="zonk('day19');" />
+     </p>
+     <h2>Day 19</h2>
+     <p id="desc-day19">
+       Image will be available on December 19th.
+     </p>
+     <p>
+       <!-- a href="download/day19.tar.xz" class="btn btn-primary btn-lg" role="button">Download</a -->
+     </p>
+    </div>
+
+    <div id="day-20" class="featurette">
+     <p>
+       <img id="img-day20" src="images/closed-door.png" alt="Day 20"
+        onclick="zonk('day20');" />
+     </p>
+     <h2>Day 20</h2>
+     <p id="desc-day20">
+       Image will be available on December 20th.
+     </p>
+     <p>
+       <!-- a href="download/day20.tar.xz" class="btn btn-primary btn-lg" role="button">Download</a -->
+     </p>
+    </div>
+
+    <div id="day-21" class="featurette">
+     <p>
+       <img id="img-day21" src="images/closed-door.png" alt="Day 21"
+        onclick="zonk('day21');" />
+     </p>
+     <h2>Day 21</h2>
+     <p id="desc-day21">
+       Image will be available on December 21th.
+     </p>
+     <p>
+       <!-- a href="download/day21.tar.xz" class="btn btn-primary btn-lg" role="button">Download</a -->
+     </p>
+    </div>
+
+    <div id="day-22" class="featurette">
+     <p>
+       <img id="img-day22" src="images/closed-door.png" alt="Day 22"
+        onclick="zonk('day22');" />
+     </p>
+     <h2>Day 22</h2>
+     <p id="desc-day22">
+       Image will be available on December 22th.
+     </p>
+     <p>
+       <!-- a href="download/day22.tar.xz" class="btn btn-primary btn-lg" role="button">Download</a -->
+     </p>
+    </div>
+
+    <div id="day-23" class="featurette">
+     <p>
+       <img id="img-day23" src="images/closed-door.png" alt="Day 23"
+        onclick="zonk('day23');" />
+     </p>
+     <h2>Day 23</h2>
+     <p id="desc-day23">
+       Image will be available on December 23th.
+     </p>
+     <p>
+       <!-- a href="download/day23.tar.xz" class="btn btn-primary btn-lg" role="button">Download</a -->
+     </p>
+    </div>
+
+    <div id="day-24" class="featurette">
+     <p>
+       <img id="img-day24" src="images/closed-door.png" alt="Day 24"
+        onclick="zonk('day24');" />
+     </p>
+     <h2>Day 24</h2>
+     <p id="desc-day24">
+       Image will be available on December 24th.
+     </p>
+     <p>
+       <!-- a href="download/day24.tar.xz" class="btn btn-primary btn-lg" role="button">Download</a -->
+     </p>
+    </div>
+
+    <hr class="featurette-divider">
 
     <div class="container marketing">
 
-      <div id="day-24" class="row featurette">
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive" src="images/day24.png" alt="Day 24">
-        </div>
-        <div class="col-md-7">
-          <h2 class="featurette-heading">Day 24 - Go out with a bang</h2>
-          <p class="lead">This game was custom-coded for the final advent calendar entry.  It's a classic that we hope you'll enjoy (the hint is in the title).  Thank you for following QEMU Advent Calendar 2014, it's been great fun to share an interesting disk image each day.  Happy New Year!</p>
-          <p>Contributed by Kevin Wolf, Max Reitz, and Stefan Hajnoczi.  Unpack with <tt>tar xf day24.tar.xz</tt> and run the <tt>day24/run</tt> script.  <a href="download/day24-src.tar.xz">Source code</a></p>
-          <a href="download/day24.tar.xz" class="btn btn-primary btn-lg" role="button">Download</a>
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div id="day-23" class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">Day 23 - Got Pebble?</h2>
-          <p class="lead"><a href="https://getpebble.com/discover">Pebble smartwatch</a> can be connected to iOS and Android devices and runs its own apps.  The emulator for app development is QEMU and the Pebble team have made a preview release available for the QEMU Advent Calendar!  Check out the <a href="https://developer.getpebble.com/getting-started">Getting Started guide</a> for app development in C or Javascript.</p>
-          <p>Disk image prepared by Matthew Hungerford at Pebble.  Unpack with <tt>tar xf pebble-qemu-preview.tar.xz</tt> and launch the <tt>pebble-qemu-preview/run</tt> script.  <a href="download/pebble-qemu-preview-src.tar.xz">Source code</a></p>
-          <a href="download/pebble-qemu-preview.tar.xz" class="btn btn-primary btn-lg" role="button">Download</a>
-        </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive" src="images/day23.png" alt="Day 23">
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div id="day-22" class="row featurette">
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive" src="images/day22.png" alt="Day 22">
-        </div>
-        <div class="col-md-7">
-          <h2 class="featurette-heading">Day 22 - Moon Buggy on s390</h2>
-          <p class="lead">We can't finish the advent calendar without a <a href="https://en.wikipedia.org/wiki/IBM_System_z">System z mainframe</a> disk image.  Here is an <a href="http://www.seehuhn.de/pages/moon-buggy">ASCII art action game</a> that turns out to be quite fun!  Drive your moon buggy across craters and shoot aliens - a clear task for the mainframe.</p>
-          <p>Disk image prepared by Alexander Graf, game by Jochen Voss.  Unpack with <tt>tar xf s390-moon-buggy.tar.xz</tt> and run the <tt>s390-moon-buggy/run</tt> script.  <a href="download/s390-moon-buggy-src.tar.xz">Source code</a></p>
-          <a href="download/s390-moon-buggy.tar.xz" class="btn btn-primary btn-lg" role="button">Download</a>
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div id="day-21" class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">Day 21 - Cult of the Bound Variable</h2>
-          <p class="lead">The <a href="http://boundvariable.org/">Ninth annual ICFP Programming Contest</a> hosted by <a href="https://www.cs.cmu.edu/Groups/pop/pop.html">Carnegie Mellon University's POP Group</a> was an epic programming puzzle, perfect for the winter holiday break.  This disk image has everything you need to start exploring a series of challenging puzzles into programming languages and obscure systems.  Read the <a href="http://boundvariable.org/press/tr-06-163.pdf">full back-story here</a>.</p>
-          <p>Disk image prepared by Stefan Hajnoczi, puzzle source code released by CMU POP Group under GPL.  Unpack with <tt>tar xf boundvariable.tar.xz</tt> and launch the <tt>boundvariable/run</tt> script.  <a href="download/boundvariable-src.tar.xz">Source code</a></p>
-          <a href="download/boundvariable.tar.xz" class="btn btn-primary btn-lg" role="button">Download</a>
-        </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive" src="images/day21.png" alt="Day 21">
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div id="day-20" class="row featurette">
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive" src="images/day20.png" alt="Day 20">
-        </div>
-        <div class="col-md-7">
-          <h2 class="featurette-heading">Day 20 - HelenOS microkernel multiserver portable OS</h2>
-          <p class="lead"><a href="http://www.helenos.org/">HelenOS</a> is a modern, general-purpose operating system written from scratch.  It is based on microkernel multiserver design principles.  Core system functionality is decomposed into isolated, intensively communicating and mostly simple user space tasks. HelenOS is still in development and this is a preview of the upcoming 0.6.0 release.  There is a <a href="http://trac.helenos.org/wiki/Tutorial">step-by-step tutorial</a> and the <a href="http://trac.helenos.org/">HelenOS wiki</a>.</p>
-          <p>Disk image prepared by Martin Decky, Jakub Jermar, and Mark Cave-Ayland.  Unpack with <tt>tar xf helenos.tar.xz</tt> and run the <tt>helenos/run</tt> script.  <a href="download/helenos-0.6.0-rc3.tar.xz">Source code</a></p>
-          <a href="download/helenos.tar.xz" class="btn btn-primary btn-lg" role="button">Download</a>
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div id="day-19" class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">Day 19 - Mandelbrot in Forth</h2>
-          <p class="lead">The <a href="https://en.wikipedia.org/wiki/Mandelbrot_set">Mandelbrot set</a> is one of the most well-known fractals.  This demo for PowerPC implements the fractal in <a href="https://en.wikipedia.org/wiki/Forth_%28programming_language%29">Forth</a> so it executes as an <a href="https://en.wikipedia.org/wiki/Open_Firmware">OpenFirmware</a> boot script.  You can zoom in/out and move around the fractal.</p>
-          <p>Contributed by Dr. David Alan Gilbert.  Unpack with <tt>tar xf mandelbrot.tar.xz</tt> and launch the <tt>mandelbrot/run</tt> script.  <a href="download/bootinfo.txt">Source code</a></p>
-          <a href="download/mandelbrot.tar.xz" class="btn btn-primary btn-lg" role="button">Download</a>
-        </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive" src="images/day19.png" alt="Day 19">
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div id="day-18" class="row featurette">
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive" src="images/day18.png" alt="Day 18">
-        </div>
-        <div class="col-md-7">
-          <h2 class="featurette-heading">Day 18 - Ceph distributed storage system</h2>
-          <p class="lead">The <a href="http://ceph.com/">Ceph</a> open source distributed storage system has become a popular way to provide cloud storage and VM disk image hosting on commodity hardware.  Object storage, block storage, and file system use cases are all supported.  A <a href="http://ceph.com/docs/master/start/quick-ceph-deploy/#storing-retrieving-object-data">quickstart guide</a> is available, try <tt>ceph status</tt>.</p>
-          <p>Disk image prepared by Patrick McGarry.  Unpack with <tt>tar xf ceph.tar.xz</tt> and run the <tt>ceph/run</tt> script.  <a href="download/ceph-src.tar.xz">Source code</a></p>
-          <a href="download/ceph.tar.xz" class="btn btn-primary btn-lg" role="button">Download</a>
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div id="day-17" class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">Day 17 - ASCII art demo goodness</h2>
-          <p class="lead"><a href="http://aa-project.sourceforge.net/bb/">BB</a> is an ASCII art demo that renders surprisingly smooth effects using <a href="http://aa-project.sourceforge.net/aalib/">aalib</a>.  aalib converts pixel images or movies to ASCII art using the shapes of characters to achieve pleasing visuals.  <a href="https://en.wikipedia.org/wiki/Matrix_digital_rain">Matrix digital rain</a> fans will enjoy this demo!</p>
-          <p>Disk image contributed by Christian Horn, demo by Filip Kupsa, Jan Hubicka, Mojmir Svoboda, and Kamil Toman.  Unpack with <tt>tar xf bb_debian.tar.xz</tt> and launch the <tt>bb_debian/run</tt> script.  <a href="download/bb_debian_sources.tar.xz">Source code</a></p>
-          <a href="download/bb_debian.tar.xz" class="btn btn-primary btn-lg" role="button">Download</a>
-        </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive" src="images/day17.png" alt="Day 17">
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div id="day-16" class="row featurette">
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive" src="images/day16.png" alt="Day 16">
-        </div>
-        <div class="col-md-7">
-          <h2 class="featurette-heading">Day 16 - Tempest Showroom</h2>
-          <p class="lead"><a href="http://dirk-loss.de/tempest-showroom.htm">Tempest Showroom</a> plays melodies on AM radio by displaying specific image patterns.  Back when CRT monitors were the norm, there were concerns about electromagnetic surveillance due to the signals that computer systems emitted.  A related demo is Fabrice Bellard's <a href="http://bellard.org/dvbt/">Analog and Digital TV (DVB-T) Signal Generation</a>.</p>
-          <p>ISO by Dirk Loss, Tempest for Eliza by Erik Thiele.  Unpack with <tt>tar xf tempest-showroom.tar.xz</tt> and run the <tt>tempest-showroom/run</tt> script.  <a href="download/tempest-showroom_develop_v0.9.7-b51.tar.xz">Source code</a></p>
-          <a href="download/tempest-showroom.tar.xz" class="btn btn-primary btn-lg" role="button">Download</a>
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div id="day-15" class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">Day 15 - Glenda's Christmas</h2>
-          <p class="lead"><a href="http://plan9.bell-labs.com/plan9/">Plan 9 from Bell Labs</a> was designed as a successor to Unix.  Some of its key features made it back into Linux, including private mount namespaces, userspace file systems, and UTF-8.  You still need to experience the original where these concepts really work together to achieve an elegant operating system.</p>
-          <p>Disk image contributed by Stefan Hajnoczi.  Unpack with <tt>tar xf plan9.tar.xz</tt> and launch the <tt>plan9/run</tt> script.</p>
-          <a href="download/plan9.tar.xz" class="btn btn-primary btn-lg" role="button">Download</a>
-        </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive" src="images/day15.png" alt="Day 15">
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div id="day-14" class="row featurette">
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive" src="images/day14.png" alt="Day 14">
-        </div>
-        <div class="col-md-7">
-          <h2 class="featurette-heading">Day 14 - Multiboot "Invaders"</h2>
-          <p class="lead">The <a href="https://www.gnu.org/software/grub/manual/multiboot/multiboot.html">Multiboot boot sequence</a> is supported by the GRUB bootloaders and QEMU as a way to standardize common mechanisms like kernel command-lines, modules/initrd, x86 protected mode, and graphics mode at startup.  This <a href="http://www.erikyyy.de/invaders/">little spaceship game</a> is implemented as a Multiboot-compliant binary so it can be loaded directly by QEMU.</p>
-          <p>Disk image prepared by Fam Zheng and Fabian Greffrath, game by Erik Thiele.  Unpack with <tt>tar xf invaders.tar.xz</tt> and run the <tt>invaders/run</tt> script.  <a href="download/invaders-1.0.0.tar.gz">Invaders source code</a></p>
-          <a href="download/invaders.tar.xz" class="btn btn-primary btn-lg" role="button">Download</a>
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div id="day-13" class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">Day 13 - Second Reality</h2>
-          <p class="lead"><a href="https://en.wikipedia.org/wiki/Second_reality">Second Reality</a> is a well-known PC demo from 1993 that combines both 2D and 3D graphics techniques.  The <a href="https://github.com/mtuomi/SecondReality">source code</a> was released in 2013.  Try it out and bring the demo to life in QEMU!</p>
-          <p>Disk image was contributed by Paolo Bonzini.  Unpack with <tt>tar xf 2nd-reality.tar.xz</tt> and launch the <tt>2nd-reality/run</tt> script.  <a href="https://github.com/mtuomi/SecondReality">Second Reality source</a>, <a href="download/freedos-src.qcow2">FreeDOS source</a></p>
-          <a href="download/2nd-reality.tar.xz" class="btn btn-primary btn-lg" role="button">Download</a>
-        </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive" src="images/day13.png" alt="Day 13">
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div id="day-12" class="row featurette">
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive" src="images/day12.png" alt="Day 12">
-        </div>
-        <div class="col-md-7">
-          <h2 class="featurette-heading">Day 12 - ETH Native Oberon</h2>
-          <p class="lead"><a href="http://www.oberon.ethz.ch/">Oberon</a> is both a family of operating systems and a programming language created by Niklaus Wirth of <a href="https://en.wikipedia.org/wiki/Modula-2">Modula-2</a> and <a href="https://en.wikipedia.org/wiki/Pascal_%28programming_language%29">Pascal</a> fame.  This image contains the PC Native Oberon variant with an Oberon compiler, network stack, file systems, and graphical user interface.  A parallel universe without UNIX or C...</p>
-          <p>Prepared by Stefan Hajnoczi with help from Peter Easthope.  Unpack with <tt>tar xf oberon.tar.xz</tt> and run the <tt>oberon/run</tt> script.</p>
-          <a href="download/oberon.tar.xz" class="btn btn-primary btn-lg" role="button">Download</a>
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div id="day-11" class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">Day 11 - OSv Redis appliance</h2>
-          <p class="lead"><a href="http://osv.io/">OSv</a> is a guest operating system that eliminates redundant layers of systems software by building a combined kernel, runtime, and application image.  The idea is to simplify management while improving performance.  This disk image includes the <a href="http://redis.io/">Redis</a> key-value store for your NoSQL enjoyment.</p>
-          <p>Dor Laor contributed this image.  Unpack with <tt>tar xf osv-redis.tar.xz</tt> and launch the <tt>osv-redis/run</tt> script.  <a href="https://github.com/cloudius-systems/osv">OSv source</a>, <a href="https://github.com/antirez/redis">Redis source</a></p>
-          <a href="download/osv-redis.tar.xz" class="btn btn-primary btn-lg" role="button">Download</a>
-        </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive" src="images/day11.png" alt="Day 11">
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div id="day-10" class="row featurette">
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive" src="images/day10.png" alt="Day 10">
-        </div>
-        <div class="col-md-7">
-          <h2 class="featurette-heading">Day 10 - 3 x 512 byte demos</h2>
-          <p class="lead">Why do things properly when you can attempt them in 512 bytes?  This selection of demos leaves no precious byte untouched.  Featuring a ray tracer that spells out "QMU", a software-rendered triangle, and a nyan cat demo to rock your PC speaker with a sweet tune.</p>
-          <p>Demos and disk image by Max Reitz.  Unpack with <tt>tar xf 512.tar.xz</tt> and run the <tt>512/run</tt> script.  <a href="https://github.com/XanClic/512-3d/blob/master/3d.asm">Triangle source</a>, <a href="https://github.com/XanClic/minirays/blob/master/ray.asm">raytracer source</a>, <a href="https://gitorious.org/512/nyanboot/">nyan cat source</a>, <a href="download/512-src.tar.xz">GRUB source</a></p>
-          <a href="download/512.tar.xz" class="btn btn-primary btn-lg" role="button">Download</a>
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div id="day-9" class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">Day 9 - Ubuntu Core, a snappy holiday surprise</h2>
-          <p class="lead">Surprise, Ubuntu is adding a new member to their family, <a href="https://ubuntu.com/snappy">Ubuntu Core</a>!  The new Snappy package manager makes it easy to share apps or containers with transactional updates.  The whole image weighs in at 110 MB and uses kernel confinement to isolate apps for security.  Say hello to the new cloud guest operating system from Ubuntu!</p>
-          <p>Mark Shuttleworth and Alexander Sack contributed this image.  Unpack with <tt>tar xf ubuntu-core-alpha.tar.xz</tt> and launch the <tt>ubuntu-core-alpha/run</tt> script.  <a href="download/ubuntu-core-alpha-src.tar.xz">Source code</a></p>
-          <a href="download/ubuntu-core-alpha.tar.xz" class="btn btn-primary btn-lg" role="button">Download</a>
-        </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive" src="images/day9.png" alt="Day 9">
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div id="day-8" class="row featurette">
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive" src="images/day8.png" alt="Day 8">
-        </div>
-        <div class="col-md-7">
-          <h2 class="featurette-heading">Day 8 - Unlikely marriage of UEFI and Zork</h2>
-          <p class="lead">This port of the <a href="http://frotz.sourceforge.net/">Frotz</a> Z-Machine interpreter allows you to play the original <a href="https://en.wikipedia.org/wiki/Zork">Zork</a> text adventure game on <a href="http://tianocore.sourceforge.net/">TianoCore UEFI</a> firmware.  A significant milestone in UEFI gaming?  You be the judge in this showcase of virtual machines without legacy BIOS.</p>
-          <p>Gerd Hoffmann prepared this disk image from Matthew Garrett's <a href="http://mjg59.dreamwidth.org/27881.html">UEFI Boot to Zork</a>.  Unpack with <tt>tar xf qemu-xmas-uefi-zork.tar.xz</tt> and read the <tt>qemu-xmas-uefi-zork/README</tt> file.  <a href="download/edk2.git-0-20141206.b829.gbaaacdc.src.rpm">TianoCore edk2 source</a>, <a href="download/uefi_frotz.tgz">UEFI Frotz source</a></p>
-          <a href="download/qemu-xmas-uefi-zork.tar.xz" class="btn btn-primary btn-lg" role="button">Download</a>
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div id="day-7" class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">Day 7 - MINIX 3 under the Christmas tree</h2>
-          <p class="lead">The venerable MINIX operating system has conquered x86 and ARM platforms with microkernel goodness.  Famous for isolating and running operating system components in separate processes so the system can survive failures, <a href="http://minix3.org/">MINIX 3</a> takes pieces from <a href="http://www.netbsd.org/docs/software/packages.html">NetBSD userspace</a> so it feels like UNIX - just unstoppable and about to take over the world!</p>
-          <p>Fam Zheng prepared this image.  Unpack with <tt>tar xf qemu-xmas-minix3.tar.xz</tt> and launch the <tt>qemu-xmas-minix3/run</tt> script.  <a href="download/minix-3.3.0.tar.xz">Source code</a></p>
-          <a href="download/qemu-xmas-minix3.tar.xz" class="btn btn-primary btn-lg" role="button">Download</a>
-        </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive" src="images/day7.png" alt="Day 7">
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div id="day-6" class="row featurette">
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive" src="images/day6.png" alt="Day 6">
-        </div>
-        <div class="col-md-7">
-          <h2 class="featurette-heading">Day 6 - 512 byte Julia fractal</h2>
-          <p class="lead">This tiny disk image renders a Julia fractal in 640x480 resolution 256 color animated glory!  Besides using the quaint 256 color palette, this image has a nice sequence of floating point calculations if you want to refresh your x87 instruction knowledge.  For a write-up and more screenshots, see this <a href="http://mainisusuallyafunction.blogspot.co.uk/2011/10/phosphene-fractal-video-feedback-as-pc.html">blog post</a> and <a href="http://wealoneonearth.blogspot.co.uk/2011/07/instantly-boot-feedback-fractals-with.html">this one</a>.</p>
-          <p>Riku Voipio prepared this disk image from Keegan McAllister's demo.  Unpack with <tt>tar xf fractal-mbr.tar.xz</tt> and launch the <tt>fractal-mbr/run</tt> script.  <a href="https://github.com/kmcallister/phosphene/">Source code</a></p>
-          <a href="download/fractal-mbr.tar.xz" class="btn btn-primary btn-lg" role="button">Download</a>
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div id="day-5" class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">Day 5 - 64-bit ARM has landed</h2>
-          <p class="lead">QEMU is the first open source emulator with 64-bit ARM support (also known as aarch64).  That's right, QEMU doesn't just emulate old hardware, it emulates hardware you may not even own yet!  But if you think 32 bits ought to be enough for anyone, just collect your bragging rights for playing <tt>tetris-bsd</tt> on a bleeding edge hardware architecture.</p>
-          <p>Riku Voipio contributed this cutting-edge image.  Unpack with <tt>tar xf arm64.tar.xz</tt> and launch the <tt>arm64/run</tt> script.  Instructions for building latest QEMU included.  <a href="http://releases.linaro.org/14.11/openembedded/aarch64">Image source</a></p>
-          <a href="download/arm64.tar.xz" class="btn btn-primary btn-lg" role="button">Download</a>
-        </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive" src="images/day5.png" alt="Day 5">
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div id="day-4" class="row featurette">
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive" src="images/day4.png" alt="Day 4">
-        </div>
-        <div class="col-md-7">
-          <h2 class="featurette-heading">Day 4 - Can't spell Christmas without ST</h2>
-          <p class="lead">Santa has brought you an <a href="https://en.wikipedia.org/wiki/Atari_st">Atari ST</a>.  Get ready for an emulator-inside-an-emulator image that boots straight into the <a href="http://hatari.tuxfamily.org/">Hatari emulator</a> and the free <a href="http://emutos.sourceforge.net/en/">EmuTOS ROM</a>.  This image comes with Atari ST demos for you to enjoy, plus the retro desktop interface.</p>
-          <p>Thomas Huth contributed this disk image.  Unpack with <tt>tar xf stxmas.tar.xz</tt> and launch the <tt>stxmas/run</tt> script.  <a href="http://sourceforge.net/projects/hatari/files/hatari/Hatari%20v.0.95/hatari-0.95.tar.gz">Hatari source</a>, <a href="http://sourceforge.net/projects/emutos/files/emutos/0.9.3/emutos-src-0.9.3.tar.gz">EmuTOS source</a>, <a href="http://wiki.qemu.org/download/linux-0.2.img.bz2">Linux</a></p>
-          <a href="download/stxmas.tar.xz" class="btn btn-primary btn-lg" role="button">Download</a>
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div id="day-3" class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">Day 3 - Bootable Pi</h2>
-          <p class="lead">The first image about algorithms (and there are more puzzles to come).  How does this tiny boot sector calculate digits of pi?  Disassemble with <tt>objdump -D -b binary -m i8086 pi.vfd</tt> or mount the disk image's FAT file system to view the source.</p>
-          <p>Paolo Bonzini prepared this disk image based on QEMU's <tt>pi_10.com</tt> test case.  Unpack with <tt>tar xf pi.tar.xz</tt> and launch the <tt>pi/run</tt> script.</p>
-          <a href="download/pi.tar.xz" class="btn btn-primary btn-lg" role="button">Download</a>
-        </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive" src="images/day3.png" alt="Day 3">
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div id="day-2" class="row featurette">
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive" src="images/day2.png" alt="Day 2">
-        </div>
-        <div class="col-md-7">
-          <h2 class="featurette-heading">Day 2 - Modern DOS</h2>
-          <p class="lead">This <a href="http://www.freedos.org/">FreeDOS</a> disk image contains the latest and greatest from the land of the Disk Operating System.  Besides checking out the DOS TCP/IP stack you never got a chance to use with your 2400 baud modem, you can relive id Software's early shareware hit <a href="https://en.wikipedia.org/wiki/Commander_Keen">Commander Keen</a>.  As a bonus the freeware edition of <a href="http://www.adeptsoftware.com/jetpack/">Jetpack</a> is also included for crazy jet-powered platform action.</p>
-          <p>Stefan Hajnoczi provided this disk image.  Unpack with <tt>tar xf freedos.tar.xz</tt> and launch the <tt>freedos/run</tt> script.  <a href="download/fd11src.iso">FreeDOS source</a></p>
-          <a href="download/freedos.tar.xz" class="btn btn-primary btn-lg" role="button">Download</a>
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div id="day-1" class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">Day 1 - Slacker's time travel</h2>
-          <p class="lead">What happens when you dig up the earliest Slackware Linux image to be had?  Travel back in time and experience Linux in its early days.  And when we say early, we mean kernel pre-1.0 early!  The <a href="https://en.wikipedia.org/wiki/Slackware">Slackware distribution</a> is the oldest still maintained distribution.</p>
-          <p>Gerd Hoffmann has provided this blast from the past.  Unpack with <tt>tar xf qemu-xmas-slackware.tar.xz</tt> and check out the <tt>qemu-xmas-slackware/README</tt> file.  <a href="http://mirrors.slackware.com/slackware/slackware-1.01/">Image source</a></p>
-          <a href="download/qemu-xmas-slackware.tar.xz" class="btn btn-primary btn-lg" role="button">Download</a>
-        </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive" src="images/day1.png" alt="Day 1">
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
       <div id="about" class="row">
         <h2>About</h2>
-        <p>The QEMU Advent Calendar 2014 website features a QEMU disk image each day of December until Christmas.</p>
-        <p>Each day a new disk image file becomes available for download.  A QEMU command-line is posted along with the disk image file as the recommended way to start the disk image.</p>
-        <p>The disk images contain interesting operating systems and software that runs under the QEMU emulator.  Some of them are well-known operating systems, old and new, others are custom demos and neat algorithms.</p>
-        <p>The disk images were created by volunteers from the QEMU community to showcase cool software that QEMU can run.</p>
+        <p>
+          The QEMU Advent Calendar 2016 features a QEMU disk image each day of
+          December until Christmas. Each day a new package becomes available
+          for download.
+        </p>
+        <p>
+          Every download contains a little 'run' shell script that starts the
+          QEMU emulator with the recommended parameters for the disk image.
+          Disk images are either contained directly in the download or are
+          downloaded by the 'run' script (you need to have installed 'curl' or
+          'wget' in that case).
+        </p>
+        <p>
+          The disk images contain interesting operating systems and software
+          that run under the QEMU emulator. Some of them are well-known or
+          not-so-well-known operating systems, old and new, others are custom
+          demos and neat algorithms.
+        </p>
+        <p>
+          The 'run' scripts (and disk images if included in the download)
+          were created by volunteers from the QEMU community to showcase cool
+          software that QEMU can run.
+        </p>
       </div>
 
       <div id="contact" class="row">
         <h2>Contact</h2>
-        <p>To get in touch please email <a href="mailto:qemu-devel@nongnu.org">qemu-devel@nongnu.org</a> and CC Stefan Hajnoczi &lt;stefanha@gmail.com&gt;.</p>
+        <p>To get in touch please email <a href="mailto:qemu-devel&#x0040;nongnu.org">qemu-devel&#x0040;nongnu.org</a>
+         and CC Thomas Huth &lt;huth&#x0040;tuxfamily.org&gt;
+         and Kashyap Chamarthy &lt;kashyapc&#x0040;fedoraproject.org&gt;.</p>
       </div>
+
+      <hr/>
 
       <footer>
         <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>QEMU logo by Benoît Canet under Creative Commons Attribution 3.0 Unported, santa hat added by Stefan Hajnoczi</p>
-        <p>&copy; 2014 QEMU contributors &middot; <a href="http://opensource.org/licenses/MIT">MIT License</a></p>
+        <p>
+          QEMU logo by Benoît Canet under Creative Commons Attribution 3.0 Unported,
+          Santa hat added by Stefan Hajnoczi
+        </p>
+        <p>
+          Website &copy; 2016 QEMU contributors &middot;
+          <a href="http://opensource.org/licenses/MIT">MIT License</a>.
+          Design based on the
+          <a href="http://www.qemu-advent-calendar.org/2014/">2014</a>
+          website created by Stefan Hajnoczi,
+          and modified for 2016 by Thomas Huth.
+        </p>
       </footer>
 
     </div><!-- /.container -->
