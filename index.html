@@ -15,8 +15,29 @@
      preload_zonk.src = 'images/zonk.png';
      function zonk(id)
      {
-          document.getElementById('img-' + id).src='images/zonk.png';
-          document.getElementById('desc-' + id).innerHTML='Please do not open the doors too early!';
+          document.getElementById('img-' + id).src = 'images/zonk.png';
+          document.getElementById('desc-' + id).innerHTML = 'Please do not open the doors too early!';
+     }
+
+     function hide_descr(id)
+     {
+          var desc = document.getElementById('desc-' + id);
+          desc.getElementsByTagName('p')[0].style.display = 'none';
+          desc.getElementsByTagName('p')[1].style.display = 'none';
+          var defch = document.createElement("p");
+          defch.id = 'defdesc-' + id;
+          defch.innerHTML = 'Click on the door to reveal the surprise<br/>or click the download button directly to keep yourself in suspense.';
+          desc.appendChild(defch);
+     }
+
+     function opendoor(id, titletxt)
+     {
+          document.getElementById('img-' + id).src = 'images/' + id + '.png';
+          document.getElementById('title-' + id).innerHTML = titletxt;
+          var desc = document.getElementById('desc-' + id);
+          desc.removeChild(document.getElementById('defdesc-' + id));
+          desc.getElementsByTagName('p')[0].style.display = 'block';
+          desc.getElementsByTagName('p')[1].style.display = 'block';
      }
      </script>
 
@@ -107,15 +128,26 @@
 
     <div id="day-1" class="featurette">
      <p>
-       <img id="img-day1" src="images/closed-door.png" alt="Day 1"
-        onclick="zonk('day1');" />
+       <img id="img-day01" src="images/closed-door.png" alt="Day 1"
+        onclick="opendoor('day01', 'Day 1 - MikeOS');" />
      </p>
-     <h2>Day 1</h2>
-     <p id="desc-day1">
-       Image will be available on December 1st.
-     </p>
+     <h2 id="title-day01">Day 1</h2>
+     <div id="desc-day01">
+      <p class="lead">
+       <a href="http://mikeos.sourceforge.net/">MikeOS</a> is a 16-bit real
+       mode OS for x86-compatible PCs, written in
+       assembly language, featuring a text editor, BASIC interpreter and much
+       more.
+      </p>
+      <p>
+       Size of download is 56 kB.
+       <a href="http://www.qemu-advent-calendar.org/2016/download/mikeos-4.5-src.zip">Sources</a>
+       are available, too.
+      </p>
+      <script>hide_descr('day01');</script>
+     </div>
      <p>
-       <!-- a href="download/day1.tar.xz" class="btn btn-primary btn-lg" role="button">Download</a -->
+       <a href="download/day01.tar.xz" class="btn btn-primary btn-lg" role="button">Download</a>
      </p>
     </div>
 
