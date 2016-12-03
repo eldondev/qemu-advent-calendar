@@ -16,7 +16,7 @@
      function zonk(id)
      {
           document.getElementById('img-' + id).src = 'images/zonk.png';
-          document.getElementById('desc-' + id).innerHTML = 'Please do not open the doors too early!';
+          document.getElementById('desc-' + id).innerHTML = '<p class="lead">Please do not open the doors too early!</p>';
      }
 
      function hide_descr(id)
@@ -67,7 +67,7 @@
                     <li><a href="http://www.qemu-advent-calendar.org/2016/">2016</a></li>
                   </ul>
                 </li>
-                <li class="active"><a href="#day-2">Current day</a></li>
+                <li class="active"><a href="#day-3">Current day</a></li>
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Jump to day <span class="caret"></span></a>
                   <ul class="dropdown-menu" role="menu">
@@ -174,15 +174,26 @@
 
     <div id="day-3" class="featurette">
      <p>
-       <img id="img-day3" src="images/closed-door.png" alt="Day 3"
-        onclick="zonk('day3');" />
+       <img id="img-day03" src="images/closed-door.png" alt="Day 3"
+        onclick="opendoor('day03', 'Day 3 - FreeGEM');" />
      </p>
-     <h2>Day 3</h2>
-     <p id="desc-day3">
-       Image will be available on December 3rd.
-     </p>
+     <h2 id="title-day03">Day 3</h2>
+     <div id="desc-day03">
+      <p class="lead">
+       GEM is a graphical user interface for DOS, originally from the late
+       1980s, later GPL-licensed and improved as
+       <a href="https://en.wikipedia.org/wiki/FreeGEM">FreeGEM</a>.
+       Enjoy a real retro-GUI feeling!
+      </p>
+      <p>
+       Size of download is 8.6 MB.
+       <a href="http://www.qemu-advent-calendar.org/2016/download/freegem-src.tar.xz">Sources</a>
+       are available, too.
+      </p>
+      <script>hide_descr('day03');</script>
+     </div>
      <p>
-       <!-- a href="download/day3.tar.xz" class="btn btn-primary btn-lg" role="button">Download</a -->
+       <a href="download/day03.tar.xz" class="btn btn-primary btn-lg" role="button">Download</a>
      </p>
     </div>
 

@@ -4,7 +4,19 @@
     <title>QEMU Advent Calendar 2016</title>
     <link>http://qemu-advent-calendar.org/</link>
     <description>The latest disk images from the QEMU Advent Calendar.</description>
-    <pubDate>Fri, 02 Dec 2016 09:00:00 +0100</pubDate>
+    <pubDate>Sat, 03 Dec 2016 10:15:00 +0100</pubDate>
+
+    <item>
+      <title>Day 3 - 16-bit retro GUI</title>
+      <pubDate>Sat, 03 Dec 2016 10:15:00 +0100</pubDate>
+      <link>http://www.qemu-advent-calendar.org/2016/#day-3</link>
+      <guid>http://www.qemu-advent-calendar.org/2016/#day-3</guid>
+      <description>
+        After the text mode retro experience on the first day, there is
+        now a 16-bit retro GUI experience for you to explore in the
+        calendar today.
+      </description>
+    </item>
 
     <item>
       <title>Day 2 - Alternative desktop experience</title>
