@@ -67,7 +67,7 @@
                     <li><a href="http://www.qemu-advent-calendar.org/2016/">2016</a></li>
                   </ul>
                 </li>
-                <li class="active"><a href="#day-3">Current day</a></li>
+                <li class="active"><a href="#day-4">Current day</a></li>
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Jump to day <span class="caret"></span></a>
                   <ul class="dropdown-menu" role="menu">
@@ -199,15 +199,23 @@
 
     <div id="day-4" class="featurette">
      <p>
-       <img id="img-day4" src="images/closed-door.png" alt="Day 4"
-        onclick="zonk('day4');" />
+       <img id="img-day04" src="images/closed-door.png" alt="Day 4"
+        onclick="opendoor('day04', 'Day 4 - ReactOS');" />
      </p>
-     <h2>Day 4</h2>
-     <p id="desc-day4">
-       Image will be available on December 4th.
-     </p>
+     <h2 id="title-day04">Day 4</h2>
+     <div id="desc-day04">
+      <p class="lead">
+       <a href="http://reactos.org/">ReactOS</a>
+       is an open source operating system, designed to be able to run Windows
+       applications and drivers.
+      </p>
+      <p>
+       Note: The 'run' script will download the disk image (~&nbsp;65&nbsp;MB).
+      </p>
+      <script>hide_descr('day04');</script>
+     </div>
      <p>
-       <!-- a href="download/day4.tar.xz" class="btn btn-primary btn-lg" role="button">Download</a -->
+       <a href="download/day04.tar.xz" class="btn btn-primary btn-lg" role="button">Download</a>
      </p>
     </div>
 
