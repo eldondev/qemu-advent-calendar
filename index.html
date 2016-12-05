@@ -9,37 +9,9 @@
 
     <link href="css/bootstrap.min.css" rel="stylesheet"/>
     <link href="css/custom.css" rel="stylesheet"/>
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="http://qemu-advent-calendar.org/2016/feed.rss"/>
 
-    <script>
-     var preload_zonk = new Image();
-     preload_zonk.src = 'images/zonk.png';
-     function zonk(id)
-     {
-          document.getElementById('img-' + id).src = 'images/zonk.png';
-          document.getElementById('desc-' + id).innerHTML = '<p class="lead">Please do not open the doors too early!</p>';
-     }
-
-     function hide_descr(id)
-     {
-          var desc = document.getElementById('desc-' + id);
-          desc.getElementsByTagName('p')[0].style.display = 'none';
-          desc.getElementsByTagName('p')[1].style.display = 'none';
-          var defch = document.createElement("p");
-          defch.id = 'defdesc-' + id;
-          defch.innerHTML = 'Click on the door to reveal the surprise<br/>or click the download button directly to keep yourself in suspense.';
-          desc.appendChild(defch);
-     }
-
-     function opendoor(id, titletxt)
-     {
-          document.getElementById('img-' + id).src = 'images/' + id + '.png';
-          document.getElementById('title-' + id).innerHTML = titletxt;
-          var desc = document.getElementById('desc-' + id);
-          desc.removeChild(document.getElementById('defdesc-' + id));
-          desc.getElementsByTagName('p')[0].style.display = 'block';
-          desc.getElementsByTagName('p')[1].style.display = 'block';
-     }
-     </script>
+    <script src="js/doors.js"></script>
 
   </head>
 
@@ -144,7 +116,7 @@
        <a href="http://www.qemu-advent-calendar.org/2016/download/mikeos-4.5-src.zip">Sources</a>
        are available, too.
       </p>
-      <script>hide_descr('day01');</script>
+      <script>initdoor('day01', 'Day 1 - MikeOS');</script>
      </div>
      <p>
        <a href="download/day01.tar.xz" class="btn btn-primary btn-lg" role="button">Download</a>
@@ -165,7 +137,7 @@
       <p>
        Note: The 'run' script will download the disk image (~&nbsp;55&nbsp;MB).
       </p>
-      <script>hide_descr('day02');</script>
+      <script>initdoor('day02', 'Day 2 - Syllable Desktop');</script>
      </div>
      <p>
        <a href="download/day02.tar.xz" class="btn btn-primary btn-lg" role="button">Download</a>
@@ -190,7 +162,7 @@
        <a href="http://www.qemu-advent-calendar.org/2016/download/freegem-src.tar.xz">Sources</a>
        are available, too.
       </p>
-      <script>hide_descr('day03');</script>
+      <script>initdoor('day03', 'Day 3 - FreeGEM');</script>
      </div>
      <p>
        <a href="download/day03.tar.xz" class="btn btn-primary btn-lg" role="button">Download</a>
@@ -212,7 +184,7 @@
       <p>
        Note: The 'run' script will download the disk image (~&nbsp;65&nbsp;MB).
       </p>
-      <script>hide_descr('day04');</script>
+      <script>initdoor('day04', 'Day 4 - ReactOS');</script>
      </div>
      <p>
        <a href="download/day04.tar.xz" class="btn btn-primary btn-lg" role="button">Download</a>
@@ -234,7 +206,7 @@
       <p>
        Size of download is 3.6 kB.
       </p>
-      <script>hide_descr('day05');</script>
+      <script>initdoor('day05', 'Day 5 - Tower of Hanoi');</script>
      </div>
      <p>
        <a href="download/day05.tar.xz" class="btn btn-primary btn-lg" role="button">Download</a>
