@@ -4,7 +4,19 @@
     <title>QEMU Advent Calendar 2016</title>
     <link>http://qemu-advent-calendar.org/</link>
     <description>The latest disk images from the QEMU Advent Calendar.</description>
-    <pubDate>Sun, 04 Dec 2016 08:00:00 +0100</pubDate>
+    <pubDate>Mon, 05 Dec 2016 06:50:00 +0100</pubDate>
+
+    <item>
+      <title>Day 5 - Fun with stacks</title>
+      <pubDate>Mon, 05 Dec 2016 06:50:00 +0100</pubDate>
+      <link>http://www.qemu-advent-calendar.org/2016/#day-5</link>
+      <guid>http://www.qemu-advent-calendar.org/2016/#day-5</guid>
+      <description>
+        This day is about stacks - with regards to the output that the
+        program shows on the screen, and with regards to the programming
+        language that has been used.
+      </description>
+    </item>
 
     <item>
       <title>Day 4 - Redmond compatible</title>
