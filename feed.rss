@@ -4,7 +4,18 @@
     <title>QEMU Advent Calendar 2016</title>
     <link>http://qemu-advent-calendar.org/</link>
     <description>The latest disk images from the QEMU Advent Calendar.</description>
-    <pubDate>Mon, 05 Dec 2016 06:50:00 +0100</pubDate>
+    <pubDate>Mon, 06 Dec 2016 13:20:00 +0100</pubDate>
+
+    <item>
+      <title>Day 6 - Fast and compact, part 1</title>
+      <pubDate>Tue, 06 Dec 2016 13:20:00 +0100</pubDate>
+      <link>http://www.qemu-advent-calendar.org/2016/#day-6</link>
+      <guid>http://www.qemu-advent-calendar.org/2016/#day-6</guid>
+      <description>
+        Today, we've got an operating system that has been written entirely
+        in assembly, designed to be fast and compact.
+      </description>
+    </item>
 
     <item>
       <title>Day 5 - Fun with stacks</title>

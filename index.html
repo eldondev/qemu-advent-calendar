@@ -39,7 +39,7 @@
                     <li><a href="http://www.qemu-advent-calendar.org/2016/">2016</a></li>
                   </ul>
                 </li>
-                <li class="active"><a href="#day-5">Current day</a></li>
+                <li class="active"><a href="#day-6">Current day</a></li>
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Jump to day <span class="caret"></span></a>
                   <ul class="dropdown-menu" role="menu">
@@ -78,7 +78,6 @@
 
       </div>
     </div>
-
 
     <div id="myCarousel" class="carousel">
       <div class="carousel-inner">
@@ -215,15 +214,23 @@
 
     <div id="day-6" class="featurette">
      <p>
-       <img id="img-day6" src="images/closed-door.png" alt="Day 6"
-        onclick="zonk('day6');" />
+       <img id="img-day06" src="images/closed-door.png" alt="Day 6"
+        onclick="opendoor('day06', 'Day 6 - MenuetOS');" />
      </p>
-     <h2>Day 6</h2>
-     <p id="desc-day6">
-       Image will be available on December 6th.
-     </p>
+     <h2 id="title-day06">Day 6</h2>
+     <div id="desc-day06">
+      <p class="lead">
+       <a href="http://menuetos.net/">MenuetOS</a>
+       is an operating system written entirely in assembly, designed to be
+       fast and compact.
+      </p>
+      <p>
+       Note: The 'run' script will download the disk image (~&nbsp;660&nbsp;kB).
+      </p>
+      <script>initdoor('day06', 'Day 6 - MenuetOS');</script>
+     </div>
      <p>
-       <!-- a href="download/day6.tar.xz" class="btn btn-primary btn-lg" role="button">Download</a -->
+       <a href="download/day06.tar.xz" class="btn btn-primary btn-lg" role="button">Download</a>
      </p>
     </div>
 
