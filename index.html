@@ -39,7 +39,7 @@
                     <li><a href="http://www.qemu-advent-calendar.org/2016/">2016</a></li>
                   </ul>
                 </li>
-                <li class="active"><a href="#day-6">Current day</a></li>
+                <li class="active"><a href="#day-7">Current day</a></li>
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Jump to day <span class="caret"></span></a>
                   <ul class="dropdown-menu" role="menu">
@@ -78,6 +78,7 @@
 
       </div>
     </div>
+
 
     <div id="myCarousel" class="carousel">
       <div class="carousel-inner">
@@ -236,15 +237,24 @@
 
     <div id="day-7" class="featurette">
      <p>
-       <img id="img-day7" src="images/closed-door.png" alt="Day 7"
-        onclick="zonk('day7');" />
+       <img id="img-day07" src="images/closed-door.png" alt="Day 7"
+        onclick="opendoor('day07', 'Day 7 - Sorry Ass');" />
      </p>
-     <h2>Day 7</h2>
-     <p id="desc-day7">
-       Image will be available on December 7th.
-     </p>
+     <h2 id="title-day07">Day 7</h2>
+     <div id="desc-day07">
+      <p class="lead">
+       A tribute for the PC's 35th anniversary, revisiting
+       <a href="https://en.wikipedia.org/wiki/DONKEY.BAS">DONKEY.BAS</a>
+       from 1981. Sorry Ass is written in pure assembly and fits into a
+       floppy disk bootsector!
+      </p>
+      <p>
+       Size of the download is only 5&nbsp;kB.
+      </p>
+      <script>initdoor('day07', 'Day 7 - Sorry Ass');</script>
+     </div>
      <p>
-       <!-- a href="download/day7.tar.xz" class="btn btn-primary btn-lg" role="button">Download</a -->
+       <a href="download/day07.tar.xz" class="btn btn-primary btn-lg" role="button">Download</a>
      </p>
     </div>
 
