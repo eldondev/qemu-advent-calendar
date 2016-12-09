@@ -4,7 +4,20 @@
     <title>QEMU Advent Calendar 2016</title>
     <link>http://qemu-advent-calendar.org/</link>
     <description>The latest disk images from the QEMU Advent Calendar.</description>
-    <pubDate>Thu, 06 Dec 2016 09:00:00 +0100</pubDate>
+    <pubDate>Fri, 07 Dec 2016 08:30:00 +0100</pubDate>
+
+    <item>
+      <title>Day 9 - Fast and compact, part 2</title>
+      <pubDate>Fri, 07 Dec 2016 08:30:00 +0100</pubDate>
+      <link>http://www.qemu-advent-calendar.org/2016/#day-9</link>
+      <guid>http://www.qemu-advent-calendar.org/2016/#day-9</guid>
+      <description>
+        Today you can have a look at another operating system where the
+        kernel has been written completely in assembly! It boots fast,
+        has a small memory footprint, and maybe even more important: The
+        disk image contains some games!
+      </description>
+    </item>
 
     <item>
       <title>Day 8 - Failsafe invasion</title>

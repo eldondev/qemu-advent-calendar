@@ -39,7 +39,7 @@
                     <li><a href="http://www.qemu-advent-calendar.org/2016/">2016</a></li>
                   </ul>
                 </li>
-                <li class="active"><a href="#day-8">Current day</a></li>
+                <li class="active"><a href="#day-9">Current day</a></li>
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Jump to day <span class="caret"></span></a>
                   <ul class="dropdown-menu" role="menu">
@@ -281,17 +281,29 @@
        <a href="download/day08.tar.xz" class="btn btn-primary btn-lg" role="button">Download</a>
      </p>
     </div>
+
     <div id="day-9" class="featurette">
      <p>
-       <img id="img-day9" src="images/closed-door.png" alt="Day 9"
-        onclick="zonk('day9');" />
+       <img id="img-day09" src="images/closed-door.png" alt="Day 9"
+        onclick="opendoor('day09', 'Day 9 - KolibriOS');" />
      </p>
-     <h2>Day 9</h2>
-     <p id="desc-day9">
-       Image will be available on December 9th.
-     </p>
+     <h2 id="title-day09">Day 9</h2>
+     <div id="desc-day09">
+      <p class="lead">
+       <a href="http://kolibrios.org/en/">KolibriOS</a> is a fast and
+       powerful operating system -- boots under 10 seconds from
+       power-on to working GUI; requires only 8MB of RAM and a few
+       more MB of disk space. Take your pick from
+       <a href="http://wiki.kolibrios.org/wiki/Applications">over 200 applications</a>!
+      </p>
+      <p>
+       Size of the download is 24&nbsp;MB.
+       Image <a href="http://www.qemu-advent-calendar.org/2016/download/kolibrios-src.tar.xz">sources</a>.
+      </p>
+      <script>initdoor('day09', 'Day 9 - KolibriOS');</script>
+     </div>
      <p>
-       <!-- a href="download/day9.tar.xz" class="btn btn-primary btn-lg" role="button">Download</a -->
+       <a href="download/day09.tar.xz" class="btn btn-primary btn-lg" role="button">Download</a>
      </p>
     </div>
 
