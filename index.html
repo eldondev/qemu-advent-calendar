@@ -39,7 +39,7 @@
                     <li><a href="http://www.qemu-advent-calendar.org/2016/">2016</a></li>
                   </ul>
                 </li>
-                <li class="active"><a href="#day-10">Current day</a></li>
+                <li class="active"><a href="#day-11">Current day</a></li>
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Jump to day <span class="caret"></span></a>
                   <ul class="dropdown-menu" role="menu">
@@ -335,14 +335,25 @@
     <div id="day-11" class="featurette">
      <p>
        <img id="img-day11" src="images/closed-door.png" alt="Day 11"
-        onclick="zonk('day11');" />
+        onclick="opendoor('day11', 'Day 11 - Genode OS Framework');" />
      </p>
-     <h2>Day 11</h2>
-     <p id="desc-day11">
-       Image will be available on December 11th.
-     </p>
+     <h2 id="title-day11">Day 11</h2>
+     <div id="desc-day11">
+      <p class="lead">
+       <a href="https://genode.org/">A tool kit</a> for
+       building highly secure special-purpose operating systems. This disk
+       image contains an example scenario of Genode running dynamic and
+       interactive workloads on top of the
+       <a href="https://sel4.systems">seL4 microkernel</a>.
+      </p>
+      <p>
+       Contributed by Jakub Jermář. Download size: 23&nbsp;MB.
+       <a href="http://www.qemu-advent-calendar.org/2016/download/genode-16.08-src.tar.bz2"> Sources</a>.
+      </p>
+      <script>initdoor('day11', 'Day 11 - Genode OS Framework');</script>
+     </div>
      <p>
-       <!-- a href="download/day11.tar.xz" class="btn btn-primary btn-lg" role="button">Download</a -->
+       <a href="download/day11.tar.xz" class="btn btn-primary btn-lg" role="button">Download</a>
      </p>
     </div>
 

@@ -4,7 +4,18 @@
     <title>QEMU Advent Calendar 2016</title>
     <link>http://qemu-advent-calendar.org/</link>
     <description>The latest disk images from the QEMU Advent Calendar.</description>
-    <pubDate>Sat, 10 Dec 2016 13:00:00 +0100</pubDate>
+    <pubDate>Sun, 11 Dec 2016 08:00:00 +0100</pubDate>
+
+    <item>
+      <title>Day 11 - A secure framework</title>
+      <pubDate>Sun, 11 Dec 2016 08:00:00 +0100</pubDate>
+      <link>http://www.qemu-advent-calendar.org/2016/#day-11</link>
+      <guid>http://www.qemu-advent-calendar.org/2016/#day-11</guid>
+      <description>
+        Today we present you a tool kit for building highly secure
+        special-purpose operating systems. 
+      </description>
+    </item>
 
     <item>
       <title>Day 10 - QEMU gaming</title>
