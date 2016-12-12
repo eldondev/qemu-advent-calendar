@@ -39,7 +39,7 @@
                     <li><a href="http://www.qemu-advent-calendar.org/2016/">2016</a></li>
                   </ul>
                 </li>
-                <li class="active"><a href="#day-11">Current day</a></li>
+                <li class="active"><a href="#day-12">Current day</a></li>
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Jump to day <span class="caret"></span></a>
                   <ul class="dropdown-menu" role="menu">
@@ -360,14 +360,23 @@
     <div id="day-12" class="featurette">
      <p>
        <img id="img-day12" src="images/closed-door.png" alt="Day 12"
-        onclick="zonk('day12');" />
+        onclick="opendoor('day12', 'Day 12 - TetrOS');" />
      </p>
-     <h2>Day 12</h2>
-     <p id="desc-day12">
-       Image will be available on December 12th.
-     </p>
+     <h2 id="title-day12">Day 12</h2>
+     <div id="desc-day12">
+      <p class="lead">
+       <a href="https://github.com/daniel-e/tetros">TetrOS</a> is a falling
+       blocks game  written that fits into the Master Boot Record.  No
+       bootloader or operating system is needed to rotate blocks and clear rows!
+      </p>
+      <p>
+       Contributed by Stefan Hajnoczi. Download size: a mere 4&nbsp;kB.
+       <a href="http://www.qemu-advent-calendar.org/2016/download/tetros-src.tar.xz">TetrOS sources</a>.
+      </p>
+      <script>initdoor('day12', 'Day 12 - TetrOS');</script>
+     </div>
      <p>
-       <!-- a href="download/day12.tar.xz" class="btn btn-primary btn-lg" role="button">Download</a -->
+       <a href="download/day12.tar.xz" class="btn btn-primary btn-lg" role="button">Download</a>
      </p>
     </div>
 
