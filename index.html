@@ -39,7 +39,7 @@
                     <li><a href="http://www.qemu-advent-calendar.org/2016/">2016</a></li>
                   </ul>
                 </li>
-                <li class="active"><a href="#day-12">Current day</a></li>
+                <li class="active"><a href="#day-13">Current day</a></li>
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Jump to day <span class="caret"></span></a>
                   <ul class="dropdown-menu" role="menu">
@@ -383,14 +383,27 @@
     <div id="day-13" class="featurette">
      <p>
        <img id="img-day13" src="images/closed-door.png" alt="Day 13"
-        onclick="zonk('day13');" />
+        onclick="opendoor('day13', 'Day 13 - supernested');" />
      </p>
-     <h2>Day 13</h2>
-     <p id="desc-day13">
-       Image will be available on December 13th.
-     </p>
+     <h2 id="title-day13">Day 13</h2>
+     <div id="desc-day13">
+      <p class="lead">
+      One VM inside another - how deeply can you nest KVM  guests?
+      "Until you get fired," <a href="https://www.xkcd.com/1764/">says XKCD</a>.
+      More seriously:
+      <a href="https://rwmj.wordpress.com/2014/07/03/super-nested-kvm/">supernested</a>
+      program was written to answer this very question.
+      <a href="https://www.usenix.org/legacy/event/osdi10/tech/full_papers/Ben-Yehuda.pdf"> It's turtles</a>
+      <a href="https://en.wikipedia.org/wiki/Turtles_all_the_way_down">all the way down!</a>
+      </p>
+      <p>
+       Contributed by Richard W.M. Jones. Download size: 239&nbsp;MB.
+       <a href="http://www.qemu-advent-calendar.org/2016/download/supernested-kernel-initrd-src.tar.xz">Sources</a>.
+      </p>
+      <script>initdoor('day13', 'Day 13 - supernested');</script>
+     </div>
      <p>
-       <!-- a href="download/day13.tar.xz" class="btn btn-primary btn-lg" role="button">Download</a -->
+       <a href="download/day13.tar.xz" class="btn btn-primary btn-lg" role="button">Download</a>
      </p>
     </div>
 
