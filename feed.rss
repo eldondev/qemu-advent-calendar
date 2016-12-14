@@ -4,7 +4,20 @@
     <title>QEMU Advent Calendar 2016</title>
     <link>http://qemu-advent-calendar.org/</link>
     <description>The latest disk images from the QEMU Advent Calendar.</description>
-    <pubDate>Tue, 13 Dec 2016 08:40:00 +0100</pubDate>
+    <pubDate>Wed, 14 Dec 2016 09:50:00 +0100</pubDate>
+
+    <item>
+      <title>Day 14 - Unikernel demo</title>
+      <pubDate>Wed, 14 Dec 2016 09:50:00 +0100</pubDate>
+      <link>http://www.qemu-advent-calendar.org/2016/#day-14</link>
+      <guid>http://www.qemu-advent-calendar.org/2016/#day-14</guid>
+      <description>
+        If you just want to run one appliance in your VM, why should you
+        bother wasting resources with a whole full-blown guest OS? Today
+        we feature a webserver demo with a unikernel guest OS that helps
+        you to build small and performing applications.
+      </description>
+    </item>
 
     <item>
       <title>Day 13 - Turtles all the way down</title>

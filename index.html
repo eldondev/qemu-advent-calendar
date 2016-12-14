@@ -39,7 +39,7 @@
                     <li><a href="http://www.qemu-advent-calendar.org/2016/">2016</a></li>
                   </ul>
                 </li>
-                <li class="active"><a href="#day-13">Current day</a></li>
+                <li class="active"><a href="#day-14">Current day</a></li>
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Jump to day <span class="caret"></span></a>
                   <ul class="dropdown-menu" role="menu">
@@ -393,7 +393,7 @@
       More seriously:
       <a href="https://rwmj.wordpress.com/2014/07/03/super-nested-kvm/">supernested</a>
       program was written to answer this very question.
-      <a href="https://www.usenix.org/legacy/event/osdi10/tech/full_papers/Ben-Yehuda.pdf"> It's turtles</a>
+      <a href="https://www.usenix.org/legacy/event/osdi10/tech/full_papers/Ben-Yehuda.pdf">It's turtles</a>
       <a href="https://en.wikipedia.org/wiki/Turtles_all_the_way_down">all the way down!</a>
       </p>
       <p>
@@ -410,14 +410,25 @@
     <div id="day-14" class="featurette">
      <p>
        <img id="img-day14" src="images/closed-door.png" alt="Day 14"
-        onclick="zonk('day14');" />
+        onclick="opendoor('day14', 'Day 14 - IncludeOS + Acorn');" />
      </p>
-     <h2>Day 14</h2>
-     <p id="desc-day14">
-       Image will be available on December 14th.
-     </p>
+     <h2 id="title-day14">Day 14</h2>
+     <div id="desc-day14">
+      <p class="lead">
+       <a href="https://github.com/includeos/acorn">Acorn</a> is a demo for the
+       <a href="https://github.com/hioa-cs/IncludeOS">IncludeOS</a> unikernel,
+       which includes a tiny operating system into your program and creates a
+       self-contained bootable disk image.
+       Browse to <a href="http://localhost:8080/">http://localhost:8080/</a>
+       to explore it.
+      </p>
+      <p>
+       Contributed by Ingve Vormestrand. Download size: 823&nbsp;kB.
+      </p>
+      <script>initdoor('day14', 'Day 14 - IncludeOS + Acorn');</script>
+     </div>
      <p>
-       <!-- a href="download/day14.tar.xz" class="btn btn-primary btn-lg" role="button">Download</a -->
+       <a href="download/day14.tar.xz" class="btn btn-primary btn-lg" role="button">Download</a>
      </p>
     </div>
 
