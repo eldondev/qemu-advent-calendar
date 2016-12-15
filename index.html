@@ -39,7 +39,7 @@
                     <li><a href="http://www.qemu-advent-calendar.org/2016/">2016</a></li>
                   </ul>
                 </li>
-                <li class="active"><a href="#day-14">Current day</a></li>
+                <li class="active"><a href="#day-15">Current day</a></li>
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Jump to day <span class="caret"></span></a>
                   <ul class="dropdown-menu" role="menu">
@@ -435,14 +435,24 @@
     <div id="day-15" class="featurette">
      <p>
        <img id="img-day15" src="images/closed-door.png" alt="Day 15"
-        onclick="zonk('day15');" />
+        onclick="opendoor('day15', 'Day 15 - Forth Pong');" />
      </p>
-     <h2>Day 15</h2>
-     <p id="desc-day15">
-       Image will be available on December 15th.
-     </p>
+     <h2 id="title-day15">Day 15</h2>
+     <div id="desc-day15">
+      <p class="lead">
+       Today we have got another PowerPC goodie for you: A
+       <a href="https://en.wikipedia.org/wiki/Pong">Pong</a> variant written in
+       <a href="https://en.wikipedia.org/wiki/Forth_%28programming_language%29">Forth</a>,
+       running on top of
+       <a href="https://en.wikipedia.org/wiki/Open_Firmware">Open Firmware</a>.
+      </p>
+      <p>
+       Download size: 5.8&nbsp;kB.
+      </p>
+      <script>initdoor('day15', 'Day 15 - Forth Pong');</script>
+     </div>
      <p>
-       <!-- a href="download/day15.tar.xz" class="btn btn-primary btn-lg" role="button">Download</a -->
+       <a href="download/day15.tar.xz" class="btn btn-primary btn-lg" role="button">Download</a>
      </p>
     </div>
 

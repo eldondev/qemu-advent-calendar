@@ -4,7 +4,18 @@
     <title>QEMU Advent Calendar 2016</title>
     <link>http://qemu-advent-calendar.org/</link>
     <description>The latest disk images from the QEMU Advent Calendar.</description>
-    <pubDate>Wed, 14 Dec 2016 09:50:00 +0100</pubDate>
+    <pubDate>Thu, 15 Dec 2016 08:40:00 +0100</pubDate>
+
+    <item>
+      <title>Day 15 - May the Forth be with you</title>
+      <pubDate>Thu, 15 Dec 2016 08:40:00 +0100</pubDate>
+      <link>http://www.qemu-advent-calendar.org/2016/#day-15</link>
+      <guid>http://www.qemu-advent-calendar.org/2016/#day-15</guid>
+      <description>
+        Today we've got a game written in Forth, running on top
+        of Open Firmware.
+      </description>
+    </item>
 
     <item>
       <title>Day 14 - Unikernel demo</title>
