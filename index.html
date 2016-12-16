@@ -39,7 +39,7 @@
                     <li><a href="http://www.qemu-advent-calendar.org/2016/">2016</a></li>
                   </ul>
                 </li>
-                <li class="active"><a href="#day-15">Current day</a></li>
+                <li class="active"><a href="#day-16">Current day</a></li>
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Jump to day <span class="caret"></span></a>
                   <ul class="dropdown-menu" role="menu">
@@ -459,14 +459,23 @@
     <div id="day-16" class="featurette">
      <p>
        <img id="img-day16" src="images/closed-door.png" alt="Day 16"
-        onclick="zonk('day16');" />
+        onclick="opendoor('day16', 'Day 16 - Tiny CC Boot Loader');" />
      </p>
-     <h2>Day 16</h2>
-     <p id="desc-day16">
-       Image will be available on December 16th.
-     </p>
+     <h2 id="title-day16">Day 16</h2>
+     <div id="desc-day16">
+      <p class="lead">
+       <a href="http://bellard.org/tcc/tccboot.html">TCCBOOT</a>
+       is a boot loader that is able to compile and boot (under 15 seconds!) a
+       Linux kernel directly from its source code. It is based on the
+       experimental <a href="http://bellard.org/tcc/">Tiny C Compiler (TCC)</a>.
+      </p>
+      <p>
+       Download size: 5.7&nbsp;MB. <a href="http://www.qemu-advent-calendar.org/2016/download/tccboot-and-tcc-src.tar.xz">Sources</a>.
+      </p>
+      <script>initdoor('day16', 'Day 16 - Tiny CC Boot Loader');</script>
+     </div>
      <p>
-       <!-- a href="download/day16.tar.xz" class="btn btn-primary btn-lg" role="button">Download</a -->
+       <a href="download/day16.tar.xz" class="btn btn-primary btn-lg" role="button">Download</a>
      </p>
     </div>
 
