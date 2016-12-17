@@ -39,7 +39,7 @@
                     <li><a href="http://www.qemu-advent-calendar.org/2016/">2016</a></li>
                   </ul>
                 </li>
-                <li class="active"><a href="#day-16">Current day</a></li>
+                <li class="active"><a href="#day-17">Current day</a></li>
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Jump to day <span class="caret"></span></a>
                   <ul class="dropdown-menu" role="menu">
@@ -482,14 +482,24 @@
     <div id="day-17" class="featurette">
      <p>
        <img id="img-day17" src="images/closed-door.png" alt="Day 17"
-        onclick="zonk('day17');" />
+        onclick="opendoor('day17', 'Day 17 - Minoca OS');" />
      </p>
-     <h2>Day 17</h2>
-     <p id="desc-day17">
-       Image will be available on December 17th.
-     </p>
+     <h2 id="title-day17">Day 17</h2>
+     <div id="desc-day17">
+      <p class="lead">
+       <a href="https://github.com/minoca/os">Minoca OS</a> is a general purpose OS
+       written completely from the ground up. It is intended for
+       devices looking to conserve power, memory, and storage.
+       <a href="https://blog.minocacorp.com/minoca-os-a-new-open-source-operating-system-4bb7998df3a7#.65but30rq">It was very recenty released under GPL v3</a>.
+      </p>
+      <p>
+       Contributed by Paolo Bonzini.
+       Download size: 103&nbsp;MB. <a href="http://www.qemu-advent-calendar.org/2016/download/minoca-os-src-0.3.0.1954.tar.gz">Sources</a>.
+      </p>
+      <script>initdoor('day17', 'Day 17 - Minoca OS');</script>
+     </div>
      <p>
-       <!-- a href="download/day17.tar.xz" class="btn btn-primary btn-lg" role="button">Download</a -->
+       <a href="download/day17.tar.xz" class="btn btn-primary btn-lg" role="button">Download</a>
      </p>
     </div>
 
