@@ -4,7 +4,19 @@
     <title>QEMU Advent Calendar 2016</title>
     <link>http://qemu-advent-calendar.org/</link>
     <description>The latest disk images from the QEMU Advent Calendar.</description>
-    <pubDate>Sat, 17 Dec 2016 15:50:00 +0100</pubDate>
+    <pubDate>Sun, 18 Dec 2016 08:20:00 +0100</pubDate>
+
+    <item>
+      <title>Day 18 - OS written in alternative language</title>
+      <pubDate>Sun, 18 Dec 2016 08:20:00 +0100</pubDate>
+      <link>http://www.qemu-advent-calendar.org/2016/#day-18</link>
+      <guid>http://www.qemu-advent-calendar.org/2016/#day-18</guid>
+      <description>
+        Most operating systems are nowadays written in C / C++, but what
+        happens if you use another modern programming language instead?
+        Open the door of day 18 to find out...
+      </description>
+    </item>
 
     <item>
       <title>Day 17 - The greenish prompt</title>
