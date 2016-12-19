@@ -4,7 +4,18 @@
     <title>QEMU Advent Calendar 2016</title>
     <link>http://qemu-advent-calendar.org/</link>
     <description>The latest disk images from the QEMU Advent Calendar.</description>
-    <pubDate>Sun, 18 Dec 2016 08:20:00 +0100</pubDate>
+    <pubDate>Mon, 19 Dec 2016 10:00:00 +0100</pubDate>
+
+    <item>
+      <title>Day 19 - Boot sector gaming, part 3</title>
+      <pubDate>Mon, 19 Dec 2016 10:00:00 +0100</pubDate>
+      <link>http://www.qemu-advent-calendar.org/2016/#day-19</link>
+      <guid>http://www.qemu-advent-calendar.org/2016/#day-19</guid>
+      <description>
+        Can you fit a game with complex rules into a boot sector with 512
+        bytes? Today's goodie will give you the anser...
+      </description>
+    </item>
 
     <item>
       <title>Day 18 - OS written in alternative language</title>
