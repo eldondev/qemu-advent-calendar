@@ -4,7 +4,18 @@
     <title>QEMU Advent Calendar 2016</title>
     <link>http://qemu-advent-calendar.org/</link>
     <description>The latest disk images from the QEMU Advent Calendar.</description>
-    <pubDate>Mon, 19 Dec 2016 10:00:00 +0100</pubDate>
+    <pubDate>Tue, 20 Dec 2016 06:20:00 +0100</pubDate>
+
+    <item>
+      <title>Day 20 - Fast and easy to use OS</title>
+      <pubDate>Tue, 20 Dec 2016 06:20:00 +0100</pubDate>
+      <link>http://www.qemu-advent-calendar.org/2016/#day-20</link>
+      <guid>http://www.qemu-advent-calendar.org/2016/#day-20</guid>
+      <description>
+        Day 20 features an open source OS that specifically targets personal
+        computing. Fast, simple to use and yet very powerful.
+      </description>
+    </item>
 
     <item>
       <title>Day 19 - Boot sector gaming, part 3</title>
