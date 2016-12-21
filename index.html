@@ -39,7 +39,7 @@
                     <li><a href="http://www.qemu-advent-calendar.org/2016/">2016</a></li>
                   </ul>
                 </li>
-                <li class="active"><a href="#day-20">Current day</a></li>
+                <li class="active"><a href="#day-21">Current day</a></li>
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Jump to day <span class="caret"></span></a>
                   <ul class="dropdown-menu" role="menu">
@@ -575,14 +575,25 @@
     <div id="day-21" class="featurette">
      <p>
        <img id="img-day21" src="images/closed-door.png" alt="Day 21"
-        onclick="zonk('day21');" />
+        onclick="opendoor('day21', 'Day 21 - WireGuard');" />
      </p>
-     <h2>Day 21</h2>
-     <p id="desc-day21">
-       Image will be available on December 21th.
-     </p>
+     <h2 id="title-day21">Day 21</h2>
+     <div id="desc-day21">
+      <p class="lead">
+       <a href="https://www.wireguard.io/">WireGuard</a> is a fast &amp;
+       modern VPN that utilizes state-of-the-art cryptography.
+       This image runs <a href="https://iperf.fr/">iperf</a> inside containers
+       &amp; prints out the performance statistics along with commands used to
+       configure the VPN.
+      </p>
+      <p>
+       Contributed by Jason A. Donenfeld and Stefan Hajnoczi. 3.2&nbsp;MB.
+       <a href="http://www.qemu-advent-calendar.org/2016/download/wireguard-src.tar.xz">Sources</a>.
+      </p>
+      <script>initdoor('day21', 'Day 21 - WireGuard');</script>
+     </div>
      <p>
-       <!-- a href="download/day21.tar.xz" class="btn btn-primary btn-lg" role="button">Download</a -->
+       <a href="download/day21.tar.xz" class="btn btn-primary btn-lg" role="button">Download</a>
      </p>
     </div>
 
