@@ -39,7 +39,7 @@
                     <li><a href="http://www.qemu-advent-calendar.org/2016/">2016</a></li>
                   </ul>
                 </li>
-                <li class="active"><a href="#day-21">Current day</a></li>
+                <li class="active"><a href="#day-22">Current day</a></li>
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Jump to day <span class="caret"></span></a>
                   <ul class="dropdown-menu" role="menu">
@@ -600,14 +600,23 @@
     <div id="day-22" class="featurette">
      <p>
        <img id="img-day22" src="images/closed-door.png" alt="Day 22"
-        onclick="zonk('day22');" />
+        onclick="opendoor('day22', 'Day 22 - Trianglix');" />
      </p>
-     <h2>Day 22</h2>
-     <p id="desc-day22">
-       Image will be available on December 22th.
-     </p>
+     <h2 id="title-day22">Day 22</h2>
+     <div id="desc-day22">
+      <p class="lead">
+       <a href="https://sortix.org/trianglix/">Trianglix</a>
+       uses the paradigm that 'everything is a triangle', in stark contrast to
+       the Unix principle that <a href="https://en.wikipedia.org/wiki/Everything_is_a_file">'everything is a file'</a>.
+       Unleash triangular power!
+      </p>
+      <p>
+       Download size: 147&nbsp;MB. <a href="http://sortie.midipix.org/sortix/release/1.0/source/sortix-1.0-full.tar.xz">Sources</a>.
+      </p>
+      <script>initdoor('day22', 'Day 22 - Trianglix');</script>
+     </div>
      <p>
-       <!-- a href="download/day22.tar.xz" class="btn btn-primary btn-lg" role="button">Download</a -->
+       <a href="download/day22.tar.xz" class="btn btn-primary btn-lg" role="button">Download</a>
      </p>
     </div>
 

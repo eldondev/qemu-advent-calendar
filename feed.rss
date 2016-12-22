@@ -4,7 +4,17 @@
     <title>QEMU Advent Calendar 2016</title>
     <link>http://qemu-advent-calendar.org/</link>
     <description>The latest disk images from the QEMU Advent Calendar.</description>
-    <pubDate>Wed, 21 Dec 2016 08:50:00 +0100</pubDate>
+    <pubDate>Thu, 22 Dec 2016 07:50:00 +0100</pubDate>
+
+    <item>
+      <title>Day 22 - Triangular power</title>
+      <pubDate>Thu, 22 Dec 2016 07:50:00 +0100</pubDate>
+      <link>http://www.qemu-advent-calendar.org/2016/#day-22</link>
+      <guid>http://www.qemu-advent-calendar.org/2016/#day-22</guid>
+      <description>
+        Everything is a triangle! ... or not? Check day 22 to find out!
+      </description>
+    </item>
 
     <item>
       <title>Day 21 - A modern VPN</title>
