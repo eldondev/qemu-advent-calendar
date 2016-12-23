@@ -4,7 +4,18 @@
     <title>QEMU Advent Calendar 2016</title>
     <link>http://qemu-advent-calendar.org/</link>
     <description>The latest disk images from the QEMU Advent Calendar.</description>
-    <pubDate>Thu, 22 Dec 2016 07:50:00 +0100</pubDate>
+    <pubDate>Fri, 23 Dec 2016 08:20:00 +0100</pubDate>
+
+    <item>
+      <title>Day 23 - 8-bit power</title>
+      <pubDate>Fri, 23 Dec 2016 08:20:00 +0100</pubDate>
+      <link>http://www.qemu-advent-calendar.org/2016/#day-23</link>
+      <guid>http://www.qemu-advent-calendar.org/2016/#day-23</guid>
+      <description>
+        Open the door of day 23 for a new great emulator-within-emulator
+        experience today!
+      </description>
+    </item>
 
     <item>
       <title>Day 22 - Triangular power</title>
