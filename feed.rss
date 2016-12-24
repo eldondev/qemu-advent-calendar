@@ -4,7 +4,18 @@
     <title>QEMU Advent Calendar 2016</title>
     <link>http://qemu-advent-calendar.org/</link>
     <description>The latest disk images from the QEMU Advent Calendar.</description>
-    <pubDate>Fri, 23 Dec 2016 08:20:00 +0100</pubDate>
+    <pubDate>Sat, 24 Dec 2016 09:30:00 +0100</pubDate>
+
+    <item>
+      <title>Day 24 - Final surprise</title>
+      <pubDate>Sat, 24 Dec 2016 09:30:00 +0100</pubDate>
+      <link>http://www.qemu-advent-calendar.org/2016/#day-23</link>
+      <guid>http://www.qemu-advent-calendar.org/2016/#day-23</guid>
+      <description>
+        Last day of the advent calendar 2016, so it is time to celebrate with
+        a custom-made image...
+      </description>
+    </item>
 
     <item>
       <title>Day 23 - 8-bit power</title>
