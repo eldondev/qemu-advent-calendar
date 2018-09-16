@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=540, initial-scale=1"/>
 
-    <title>QEMU Advent Calendar 2016</title>
+    <title>QEMU Advent Calendar 2018</title>
 
     <link href="css/bootstrap.min.css" rel="stylesheet"/>
     <link href="css/custom.css" rel="stylesheet"/>
@@ -32,40 +32,41 @@
             <div id="navbar" class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
                 <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">2016<span class="caret"></span></a>
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">2018<span class="caret"></span></a>
                   <ul class="dropdown-menu" role="menu">
                     <li><a href="/2014/">2014</a></li>
                     <li><a href="/2016/">2016</a></li>
+                    <li><a href="/2018/">2018</a></li>
                   </ul>
                 </li>
                 <li class="active"><a href="#day-24">Final day</a></li>
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Jump to day <span class="caret"></span></a>
                   <ul class="dropdown-menu" role="menu">
-                    <li><a href="#day-1">1 - 2016-12-01</a></li>
-                    <li><a href="#day-2">2 - 2016-12-02</a></li>
-                    <li><a href="#day-3">3 - 2016-12-03</a></li>
-                    <li><a href="#day-4">4 - 2016-12-04</a></li>
-                    <li><a href="#day-5">5 - 2016-12-05</a></li>
-                    <li><a href="#day-6">6 - 2016-12-06</a></li>
-                    <li><a href="#day-7">7 - 2016-12-07</a></li>
-                    <li><a href="#day-8">8 - 2016-12-08</a></li>
-                    <li><a href="#day-9">9 - 2016-12-09</a></li>
-                    <li><a href="#day-10">10 - 2016-12-10</a></li>
-                    <li><a href="#day-11">11 - 2016-12-11</a></li>
-                    <li><a href="#day-12">12 - 2016-12-12</a></li>
-                    <li><a href="#day-13">13 - 2016-12-13</a></li>
-                    <li><a href="#day-14">14 - 2016-12-14</a></li>
-                    <li><a href="#day-15">15 - 2016-12-15</a></li>
-                    <li><a href="#day-16">16 - 2016-12-16</a></li>
-                    <li><a href="#day-17">17 - 2016-12-17</a></li>
-                    <li><a href="#day-18">18 - 2016-12-18</a></li>
-                    <li><a href="#day-19">19 - 2016-12-19</a></li>
-                    <li><a href="#day-20">20 - 2016-12-20</a></li>
-                    <li><a href="#day-21">21 - 2016-12-21</a></li>
-                    <li><a href="#day-22">22 - 2016-12-22</a></li>
-                    <li><a href="#day-23">23 - 2016-12-23</a></li>
-                    <li><a href="#day-24">24 - 2016-12-24</a></li>
+                    <li><a href="#day-1">1 - 2018-12-01</a></li>
+                    <li><a href="#day-2">2 - 2018-12-02</a></li>
+                    <li><a href="#day-3">3 - 2018-12-03</a></li>
+                    <li><a href="#day-4">4 - 2018-12-04</a></li>
+                    <li><a href="#day-5">5 - 2018-12-05</a></li>
+                    <li><a href="#day-6">6 - 2018-12-06</a></li>
+                    <li><a href="#day-7">7 - 2018-12-07</a></li>
+                    <li><a href="#day-8">8 - 2018-12-08</a></li>
+                    <li><a href="#day-9">9 - 2018-12-09</a></li>
+                    <li><a href="#day-10">10 - 2018-12-10</a></li>
+                    <li><a href="#day-11">11 - 2018-12-11</a></li>
+                    <li><a href="#day-12">12 - 2018-12-12</a></li>
+                    <li><a href="#day-13">13 - 2018-12-13</a></li>
+                    <li><a href="#day-14">14 - 2018-12-14</a></li>
+                    <li><a href="#day-15">15 - 2018-12-15</a></li>
+                    <li><a href="#day-16">16 - 2018-12-16</a></li>
+                    <li><a href="#day-17">17 - 2018-12-17</a></li>
+                    <li><a href="#day-18">18 - 2018-12-18</a></li>
+                    <li><a href="#day-19">19 - 2018-12-19</a></li>
+                    <li><a href="#day-20">20 - 2018-12-20</a></li>
+                    <li><a href="#day-21">21 - 2018-12-21</a></li>
+                    <li><a href="#day-22">22 - 2018-12-22</a></li>
+                    <li><a href="#day-23">23 - 2018-12-23</a></li>
+                    <li><a href="#day-24">24 - 2018-12-24</a></li>
                   </ul>
                 </li>
                 <li><a href="#about">About</a></li>
@@ -100,568 +101,361 @@
     <div id="day-1" class="featurette">
      <p>
        <img id="img-day01" src="images/closed-door.png" alt="Day 1"
-        onclick="opendoor('day01', 'Day 1 - MikeOS');" />
+        onclick="zonk('day01');" />
      </p>
      <h2 id="title-day01">Day 1</h2>
      <div id="desc-day01">
-      <p class="lead">
-       <a href="http://mikeos.sourceforge.net/">MikeOS</a> is a 16-bit real
-       mode OS for x86-compatible PCs, written in
-       assembly language, featuring a text editor, BASIC interpreter and much
-       more.
-      </p>
       <p>
-       Size of download is 56 kB.
-       <a href="/2016/download/mikeos-4.5-src.zip">Sources</a>
-       are available, too.
+       Image will be available on December 1st.
       </p>
-      <script>initdoor('day01', 'Day 1 - MikeOS');</script>
      </div>
      <p>
-       <a href="download/day01.tar.xz" class="btn btn-primary btn-lg" role="button">Download</a>
      </p>
     </div>
 
     <div id="day-2" class="featurette">
      <p>
        <img id="img-day02" src="images/closed-door.png" alt="Day 2"
-        onclick="opendoor('day02', 'Day 2 - Syllable Desktop');" />
+        onclick="zonk('day02');" />
      </p>
      <h2 id="title-day02">Day 2</h2>
      <div id="desc-day02">
-      <p class="lead">
-       <a href="http://www.syllable.org/">Syllable Desktop</a>
-       is an original, easy-to-use open source operating system.
-      </p>
       <p>
-       Note: The 'run' script will download the disk image (~&nbsp;55&nbsp;MB).
+       Image will be available on December 2nd.
       </p>
-      <script>initdoor('day02', 'Day 2 - Syllable Desktop');</script>
      </div>
      <p>
-       <a href="download/day02.tar.xz" class="btn btn-primary btn-lg" role="button">Download</a>
      </p>
     </div>
 
     <div id="day-3" class="featurette">
      <p>
        <img id="img-day03" src="images/closed-door.png" alt="Day 3"
-        onclick="opendoor('day03', 'Day 3 - FreeGEM');" />
+        onclick="zonk('day03');" />
      </p>
      <h2 id="title-day03">Day 3</h2>
      <div id="desc-day03">
-      <p class="lead">
-       GEM is a graphical user interface for DOS, originally from the late
-       1980s, later GPL-licensed and improved as
-       <a href="https://en.wikipedia.org/wiki/FreeGEM">FreeGEM</a>.
-       Enjoy a real retro-GUI feeling!
-      </p>
       <p>
-       Size of download is 8.6 MB.
-       <a href="/2016/download/freegem-src.tar.xz">Sources</a>
-       are available, too.
+       Image will be available on December 3rd.
       </p>
-      <script>initdoor('day03', 'Day 3 - FreeGEM');</script>
      </div>
      <p>
-       <a href="download/day03.tar.xz" class="btn btn-primary btn-lg" role="button">Download</a>
      </p>
     </div>
 
     <div id="day-4" class="featurette">
      <p>
        <img id="img-day04" src="images/closed-door.png" alt="Day 4"
-        onclick="opendoor('day04', 'Day 4 - ReactOS');" />
+        onclick="zonk('day04');" />
      </p>
      <h2 id="title-day04">Day 4</h2>
      <div id="desc-day04">
-      <p class="lead">
-       <a href="http://reactos.org/">ReactOS</a>
-       is an open source operating system, designed to be able to run Windows
-       applications and drivers.
-      </p>
       <p>
-       Note: The 'run' script will download the disk image (~&nbsp;65&nbsp;MB).
+       Image will be available on December 4th.
       </p>
-      <script>initdoor('day04', 'Day 4 - ReactOS');</script>
      </div>
      <p>
-       <a href="download/day04.tar.xz" class="btn btn-primary btn-lg" role="button">Download</a>
      </p>
     </div>
 
     <div id="day-5" class="featurette">
      <p>
        <img id="img-day05" src="images/closed-door.png" alt="Day 5"
-        onclick="opendoor('day05', 'Day 5 - Tower of Hanoi');" />
+        onclick="zonk('day05');" />
      </p>
      <h2 id="title-day05">Day 5</h2>
      <div id="desc-day05">
-      <p class="lead">
-       This day we present you a little Forth script that automatically plays the
-       <a href="https://en.wikipedia.org/wiki/Tower_of_Hanoi">Tower of Hanoi</a>
-       game on top of Open Firmware.
-      </p>
       <p>
-       Size of download is 3.6 kB.
+       Image will be available on December 5th.
       </p>
-      <script>initdoor('day05', 'Day 5 - Tower of Hanoi');</script>
      </div>
      <p>
-       <a href="download/day05.tar.xz" class="btn btn-primary btn-lg" role="button">Download</a>
      </p>
     </div>
 
     <div id="day-6" class="featurette">
      <p>
        <img id="img-day06" src="images/closed-door.png" alt="Day 6"
-        onclick="opendoor('day06', 'Day 6 - MenuetOS');" />
+        onclick="zonk('day06');" />
      </p>
      <h2 id="title-day06">Day 6</h2>
      <div id="desc-day06">
-      <p class="lead">
-       <a href="http://menuetos.net/">MenuetOS</a>
-       is an operating system written entirely in assembly, designed to be
-       fast and compact.
-      </p>
       <p>
-       Note: The 'run' script will download the disk image (~&nbsp;660&nbsp;kB).
+       Image will be available on December 6th.
       </p>
-      <script>initdoor('day06', 'Day 6 - MenuetOS');</script>
      </div>
      <p>
-       <a href="download/day06.tar.xz" class="btn btn-primary btn-lg" role="button">Download</a>
      </p>
     </div>
 
     <div id="day-7" class="featurette">
      <p>
        <img id="img-day07" src="images/closed-door.png" alt="Day 7"
-        onclick="opendoor('day07', 'Day 7 - Sorry Ass');" />
+        onclick="zonk('day07');" />
      </p>
      <h2 id="title-day07">Day 7</h2>
      <div id="desc-day07">
-      <p class="lead">
-       A tribute for the PC's 35th anniversary, revisiting
-       <a href="https://en.wikipedia.org/wiki/DONKEY.BAS">DONKEY.BAS</a>
-       from 1981. Sorry Ass is written in pure assembly and fits into a
-       floppy disk bootsector!
-      </p>
       <p>
-       Size of the download is only 5&nbsp;kB.
+       Image will be available on December 7th.
       </p>
-      <script>initdoor('day07', 'Day 7 - Sorry Ass');</script>
      </div>
      <p>
-       <a href="download/day07.tar.xz" class="btn btn-primary btn-lg" role="button">Download</a>
      </p>
     </div>
 
     <div id="day-8" class="featurette">
      <p>
        <img id="img-day08" src="images/closed-door.png" alt="Day 8"
-        onclick="opendoor('day08', 'Day 8 - PM Invaders');" />
+        onclick="zonk('day08');" />
      </p>
      <h2 id="title-day08">Day 8</h2>
      <div id="desc-day08">
-      <p class="lead">
-       A variant of the classic game 'Invaders' that can survive power
-       failures with the power of <a href="https://nvdimm.wiki.kernel.org/">NVDIMM</a>
-       and the <a href="http://pmem.io/nvml/libpmemobj/">Persistent Memory library</a>.
-       Try powering off QEMU mid-game, and resume where you left off!
-      </p>
       <p>
-       Contributed by Guangrong Xiao &amp; Haozhong Zhang. 107&nbsp;MB.
-       <a href="/2016/download/pminvaders-nvml-and-linux-src.tar.xz">Sources</a>.
+       Image will be available on December 8th.
       </p>
-      <script>initdoor('day08', 'Day 8 - PM Invaders');</script>
      </div>
      <p>
-       <a href="download/day08.tar.xz" class="btn btn-primary btn-lg" role="button">Download</a>
      </p>
     </div>
 
     <div id="day-9" class="featurette">
      <p>
        <img id="img-day09" src="images/closed-door.png" alt="Day 9"
-        onclick="opendoor('day09', 'Day 9 - KolibriOS');" />
+        onclick="zonk('day09');" />
      </p>
      <h2 id="title-day09">Day 9</h2>
      <div id="desc-day09">
-      <p class="lead">
-       <a href="http://kolibrios.org/en/">KolibriOS</a> is a fast and
-       powerful operating system -- boots under 10 seconds from
-       power-on to working GUI; requires only 8MB of RAM and a few
-       more MB of disk space. Take your pick from
-       <a href="http://wiki.kolibrios.org/wiki/Applications">over 200 applications</a>!
-      </p>
       <p>
-       Size of the download is 24&nbsp;MB.
-       Image <a href="/2016/download/kolibrios-src.tar.xz">sources</a>.
+       Image will be available on December 9th.
       </p>
-      <script>initdoor('day09', 'Day 9 - KolibriOS');</script>
      </div>
      <p>
-       <a href="download/day09-v2.tar.xz" class="btn btn-primary btn-lg" role="button">Download</a>
      </p>
     </div>
+
 
     <div id="day-10" class="featurette">
      <p>
        <img id="img-day10" src="images/closed-door.png" alt="Day 10"
-        onclick="opendoor('day10', 'Day 10 - Epic Pinball Demo');" />
+        onclick="zonk('day10');" />
      </p>
      <h2 id="title-day10">Day 10</h2>
      <div id="desc-day10">
-      <p class="lead">
-       <a href="https://en.wikipedia.org/wiki/Epic_Pinball">Epic Pinball</a>
-       is a vintage (1993) pinball video game. It is played seen
-       from a 2D top-down view within a scrollable window with plain
-       <a href="https://en.wikipedia.org/wiki/Raster_graphics">raster graphics</a>
-       in 320x240 resolution. Try the "Android" table.
-      </p>
       <p>
-       Contributed by Paolo Bonzini. Download size: 20&nbsp;MB.
-       <a href="/2016/download/fd11src.iso">FreeDOS source</a>.
+       Image will be available on December 10th.
       </p>
-      <script>initdoor('day10', 'Day 10 - Epic Pinball Demo');</script>
      </div>
      <p>
-       <a href="download/day10.tar.xz" class="btn btn-primary btn-lg" role="button">Download</a>
      </p>
     </div>
 
     <div id="day-11" class="featurette">
      <p>
        <img id="img-day11" src="images/closed-door.png" alt="Day 11"
-        onclick="opendoor('day11', 'Day 11 - Genode OS Framework');" />
+        onclick="zonk('day11');" />
      </p>
      <h2 id="title-day11">Day 11</h2>
      <div id="desc-day11">
-      <p class="lead">
-       <a href="https://genode.org/">A tool kit</a> for
-       building highly secure special-purpose operating systems. This disk
-       image contains an example scenario of Genode running dynamic and
-       interactive workloads on top of the
-       <a href="https://sel4.systems">seL4 microkernel</a>.
-      </p>
       <p>
-       Contributed by Jakub Jermář. Download size: 23&nbsp;MB.
-       <a href="/2016/download/genode-16.08-src.tar.bz2"> Sources</a>.
+       Image will be available on December 11th.
       </p>
-      <script>initdoor('day11', 'Day 11 - Genode OS Framework');</script>
      </div>
      <p>
-       <a href="download/day11.tar.xz" class="btn btn-primary btn-lg" role="button">Download</a>
      </p>
     </div>
 
     <div id="day-12" class="featurette">
      <p>
        <img id="img-day12" src="images/closed-door.png" alt="Day 12"
-        onclick="opendoor('day12', 'Day 12 - TetrOS');" />
+        onclick="zonk('day12');" />
      </p>
      <h2 id="title-day12">Day 12</h2>
      <div id="desc-day12">
-      <p class="lead">
-       <a href="https://github.com/daniel-e/tetros">TetrOS</a> is a falling
-       blocks game  written that fits into the Master Boot Record.  No
-       bootloader or operating system is needed to rotate blocks and clear rows!
-      </p>
       <p>
-       Contributed by Stefan Hajnoczi. Download size: a mere 4&nbsp;kB.
-       <a href="/2016/download/tetros-src.tar.xz">TetrOS sources</a>.
+       Image will be available on December 12th.
       </p>
-      <script>initdoor('day12', 'Day 12 - TetrOS');</script>
      </div>
      <p>
-       <a href="download/day12.tar.xz" class="btn btn-primary btn-lg" role="button">Download</a>
      </p>
     </div>
 
     <div id="day-13" class="featurette">
      <p>
        <img id="img-day13" src="images/closed-door.png" alt="Day 13"
-        onclick="opendoor('day13', 'Day 13 - supernested');" />
+        onclick="zonk('day13');" />
      </p>
      <h2 id="title-day13">Day 13</h2>
      <div id="desc-day13">
-      <p class="lead">
-      One VM inside another - how deeply can you nest KVM  guests?
-      "Until you get fired," <a href="https://www.xkcd.com/1764/">says XKCD</a>.
-      More seriously:
-      <a href="https://rwmj.wordpress.com/2014/07/03/super-nested-kvm/">supernested</a>
-      program was written to answer this very question.
-      <a href="https://www.usenix.org/legacy/event/osdi10/tech/full_papers/Ben-Yehuda.pdf">It's turtles</a>
-      <a href="https://en.wikipedia.org/wiki/Turtles_all_the_way_down">all the way down!</a>
-      </p>
       <p>
-       Contributed by Richard W.M. Jones. Download size: 239&nbsp;MB.
-       <a href="/2016/download/supernested-kernel-initrd-src.tar.xz">Sources</a>.
+       Image will be available on December 13th.
       </p>
-      <script>initdoor('day13', 'Day 13 - supernested');</script>
      </div>
      <p>
-       <a href="download/day13.tar.xz" class="btn btn-primary btn-lg" role="button">Download</a>
      </p>
     </div>
 
     <div id="day-14" class="featurette">
      <p>
        <img id="img-day14" src="images/closed-door.png" alt="Day 14"
-        onclick="opendoor('day14', 'Day 14 - IncludeOS + Acorn');" />
+        onclick="zonk('day14');" />
      </p>
      <h2 id="title-day14">Day 14</h2>
      <div id="desc-day14">
-      <p class="lead">
-       <a href="https://github.com/includeos/acorn">Acorn</a> is a demo for the
-       <a href="https://github.com/hioa-cs/IncludeOS">IncludeOS</a> unikernel,
-       which includes a tiny operating system into your program and creates a
-       self-contained bootable disk image.
-       Browse to <a href="http://localhost:8080/">http://localhost:8080/</a>
-       to explore it.
-      </p>
       <p>
-       Contributed by Ingve Vormestrand. Download size: 823&nbsp;kB.
+       Image will be available on December 14th.
       </p>
-      <script>initdoor('day14', 'Day 14 - IncludeOS + Acorn');</script>
      </div>
      <p>
-       <a href="download/day14.tar.xz" class="btn btn-primary btn-lg" role="button">Download</a>
      </p>
     </div>
 
     <div id="day-15" class="featurette">
      <p>
        <img id="img-day15" src="images/closed-door.png" alt="Day 15"
-        onclick="opendoor('day15', 'Day 15 - Forth Pong');" />
+        onclick="zonk('day15');" />
      </p>
      <h2 id="title-day15">Day 15</h2>
      <div id="desc-day15">
-      <p class="lead">
-       Today we have got another PowerPC goodie for you: A
-       <a href="https://en.wikipedia.org/wiki/Pong">Pong</a> variant written in
-       <a href="https://en.wikipedia.org/wiki/Forth_%28programming_language%29">Forth</a>,
-       running on top of
-       <a href="https://en.wikipedia.org/wiki/Open_Firmware">Open Firmware</a>.
-      </p>
       <p>
-       Download size: 5.8&nbsp;kB.
+       Image will be available on December 15th.
       </p>
-      <script>initdoor('day15', 'Day 15 - Forth Pong');</script>
      </div>
      <p>
-       <a href="download/day15.tar.xz" class="btn btn-primary btn-lg" role="button">Download</a>
      </p>
     </div>
 
     <div id="day-16" class="featurette">
      <p>
        <img id="img-day16" src="images/closed-door.png" alt="Day 16"
-        onclick="opendoor('day16', 'Day 16 - Tiny CC Boot Loader');" />
+        onclick="zonk('day16');" />
      </p>
      <h2 id="title-day16">Day 16</h2>
      <div id="desc-day16">
-      <p class="lead">
-       <a href="http://bellard.org/tcc/tccboot.html">TCCBOOT</a>
-       is a boot loader that is able to compile and boot (under 15 seconds!) a
-       Linux kernel directly from its source code. It is based on the
-       experimental <a href="http://bellard.org/tcc/">Tiny C Compiler (TCC)</a>.
-      </p>
       <p>
-       Download size: 5.7&nbsp;MB. <a href="/2016/download/tccboot-and-tcc-src.tar.xz">Sources</a>.
+       Image will be available on December 16th.
       </p>
-      <script>initdoor('day16', 'Day 16 - Tiny CC Boot Loader');</script>
      </div>
      <p>
-       <a href="download/day16.tar.xz" class="btn btn-primary btn-lg" role="button">Download</a>
      </p>
     </div>
 
     <div id="day-17" class="featurette">
      <p>
        <img id="img-day17" src="images/closed-door.png" alt="Day 17"
-        onclick="opendoor('day17', 'Day 17 - Minoca OS');" />
+        onclick="zonk('day17');" />
      </p>
      <h2 id="title-day17">Day 17</h2>
      <div id="desc-day17">
-      <p class="lead">
-       <a href="https://github.com/minoca/os">Minoca OS</a> is a general purpose OS
-       written completely from the ground up. It is intended for
-       devices looking to conserve power, memory, and storage.
-       <a href="https://blog.minocacorp.com/minoca-os-a-new-open-source-operating-system-4bb7998df3a7#.65but30rq">It was very recenty released under GPL v3</a>.
-      </p>
       <p>
-       Contributed by Paolo Bonzini. Download size: 103&nbsp;MB.
-       <a href="/2016/download/minoca-os-src-0.3.0.1954.tar.gz">Sources</a>.
+       Image will be available on December 17th.
       </p>
-      <script>initdoor('day17', 'Day 17 - Minoca OS');</script>
      </div>
      <p>
-       <a href="download/day17.tar.xz" class="btn btn-primary btn-lg" role="button">Download</a>
      </p>
     </div>
 
     <div id="day-18" class="featurette">
      <p>
        <img id="img-day18" src="images/closed-door.png" alt="Day 18"
-        onclick="opendoor('day18', 'Day 18 - Redox OS');" />
+        onclick="zonk('day18');" />
      </p>
      <h2 id="title-day18">Day 18</h2>
      <div id="desc-day18">
-      <p class="lead">
-       <a href="http://www.redox-os.org/">Redox</a> is an operating system
-       completely written in <a href="http://www.rust-lang.org/">Rust</a>,
-       which aims to bring the innovations of Rust to a modern microkernel
-       and full set of applications.
-      </p>
       <p>
-       Note: The 'run' script will download the disk image (~&nbsp;11&nbsp;MB).
+       Image will be available on December 18th.
       </p>
-      <script>initdoor('day18', 'Day 18 - Redox OS');</script>
      </div>
      <p>
-       <a href="download/day18.tar.xz" class="btn btn-primary btn-lg" role="button">Download</a>
      </p>
     </div>
 
     <div id="day-19" class="featurette">
      <p>
        <img id="img-day19" src="images/closed-door.png" alt="Day 19"
-        onclick="opendoor('day19', 'Day 19 - BootChess');" />
+        onclick="zonk('day19');" />
      </p>
      <h2 id="title-day19">Day 19</h2>
      <div id="desc-day19">
-      <p class="lead">
-       BootChess is a surprisingly small implementation of the
-       <a href="https://en.wikipedia.org/wiki/Chess">chess board game</a>.
-       It fits into a bootsector with only 512 bytes!
-      </p>
       <p>
-       Download size: 22&nbsp;kB (sorry, the docs are bigger than the
-       program itself)
+       Image will be available on December 19th.
       </p>
-      <script>initdoor('day19', 'Day 19 - BootChess');</script>
      </div>
      <p>
-       <a href="download/day19.tar.xz" class="btn btn-primary btn-lg" role="button">Download</a>
      </p>
     </div>
 
     <div id="day-20" class="featurette">
      <p>
        <img id="img-day20" src="images/closed-door.png" alt="Day 20"
-        onclick="opendoor('day20', 'Day 20 - Haiku OS');" />
+        onclick="zonk('day20');" />
      </p>
      <h2 id="title-day20">Day 20</h2>
      <div id="desc-day20">
-      <p class="lead">
-       <a href="https://www.haiku-os.org">Haiku</a> is an open source OS
-       that specifically targets personal computing. Inspired by the
-       <a href="https://en.wikipedia.org/wiki/BeOS">BeOS</a>
-       Haiku is fast, simple to use and yet very powerful.
-      </p>
       <p>
-       Note: The 'run' script will download the disk image (~&nbsp;137&nbsp;MB).
+       Image will be available on December 20th.
       </p>
-      <script>initdoor('day20', 'Day 20 - Haiku OS');</script>
      </div>
      <p>
-       <a href="download/day20.tar.xz" class="btn btn-primary btn-lg" role="button">Download</a>
      </p>
     </div>
 
     <div id="day-21" class="featurette">
      <p>
        <img id="img-day21" src="images/closed-door.png" alt="Day 21"
-        onclick="opendoor('day21', 'Day 21 - WireGuard');" />
+        onclick="zonk('day21');" />
      </p>
      <h2 id="title-day21">Day 21</h2>
      <div id="desc-day21">
-      <p class="lead">
-       <a href="https://www.wireguard.io/">WireGuard</a> is a fast &amp;
-       modern VPN that utilizes state-of-the-art cryptography.
-       This image runs <a href="https://iperf.fr/">iperf</a> inside containers
-       &amp; prints out the performance statistics along with commands used to
-       configure the VPN.
-      </p>
       <p>
-       Contributed by Jason A. Donenfeld and Stefan Hajnoczi. 3.2&nbsp;MB.
-       <a href="/2016/download/wireguard-src.tar.xz">Sources</a>.
+       Image will be available on December 21th.
       </p>
-      <script>initdoor('day21', 'Day 21 - WireGuard');</script>
      </div>
      <p>
-       <a href="download/day21.tar.xz" class="btn btn-primary btn-lg" role="button">Download</a>
      </p>
     </div>
 
     <div id="day-22" class="featurette">
      <p>
        <img id="img-day22" src="images/closed-door.png" alt="Day 22"
-        onclick="opendoor('day22', 'Day 22 - Trianglix');" />
+        onclick="zonk('day22');" />
      </p>
      <h2 id="title-day22">Day 22</h2>
      <div id="desc-day22">
-      <p class="lead">
-       <a href="https://sortix.org/trianglix/">Trianglix</a>
-       uses the paradigm that 'everything is a triangle', in stark contrast to
-       the Unix principle that <a href="https://en.wikipedia.org/wiki/Everything_is_a_file">'everything is a file'</a>.
-       Unleash triangular power!
-      </p>
       <p>
-       Download size: 147&nbsp;MB. <a href="http://sortie.midipix.org/sortix/release/1.0/source/sortix-1.0-full.tar.xz">Sources</a>.
+       Image will be available on December 22th.
       </p>
-      <script>initdoor('day22', 'Day 22 - Trianglix');</script>
      </div>
      <p>
-       <a href="download/day22.tar.xz" class="btn btn-primary btn-lg" role="button">Download</a>
      </p>
     </div>
 
     <div id="day-23" class="featurette">
      <p>
        <img id="img-day23" src="images/closed-door.png" alt="Day 23"
-        onclick="opendoor('day23', 'Day 23 - ZX Spectrum');" />
+        onclick="zonk('day23');" />
      </p>
      <h2 id="title-day23">Day 23</h2>
      <div id="desc-day23">
-      <p class="lead">
-       <a href="https://en.wikipedia.org/wiki/ZX_Spectrum">ZX Spectrum</a>
-       was one of most successful 8-bit machines of all time, with still an
-       <a href="http://www.worldofspectrum.org/WoSFAQ.html">active community</a>!
-       Relive the experience with a selection of
-       <a href="https://en.wikipedia.org/wiki/Homebrew_(video_games)">homebrew</a> games,
-       using the <a href="http://fuse-emulator.sourceforge.net/">Free Unix Spectrum Emulator</a>.
-      </p>
       <p>
-       Contributed by Alberto Garcia. 7&nbsp;MB. Sources: Refer 'sources.txt' in the package.
+       Image will be available on December 23th.
       </p>
-      <script>initdoor('day23', 'Day 23 - ZX Spectrum');</script>
      </div>
      <p>
-       <a href="download/day23.tar.xz" class="btn btn-primary btn-lg" role="button">Download</a>
      </p>
     </div>
 
     <div id="day-24" class="featurette">
      <p>
        <img id="img-day24" src="images/closed-door.png" alt="Day 24"
-        onclick="opendoor('day24', 'Day 24 - Final surprise');" />
+        onclick="zonk('day24');" />
      </p>
      <h2 id="title-day24">Day 24</h2>
      <div id="desc-day24">
-      <p class="lead">
-       Final day, so it is time to celebrate with a custom made image...Thanks for
-       following the calendar, happy holidays and best wishes for the New Year!
-      </p>
       <p>
-       Download size: 6&nbsp;MB.
+       Image will be available on December 24th.
       </p>
-      <script>initdoor('day24', 'Day 24 - Final surprise');</script>
      </div>
      <p>
-       <a href="download/day24.tar.xz" class="btn btn-primary btn-lg" role="button">Download</a>
      </p>
     </div>
 
@@ -672,7 +466,7 @@
       <div id="about" class="row">
         <h2>About</h2>
         <p>
-          The QEMU Advent Calendar 2016 features a QEMU disk image each day of
+          The QEMU Advent Calendar 2018 features a QEMU disk image each day of
           December until Christmas. Each day a new package becomes available
           for download.
         </p>
@@ -699,8 +493,7 @@
       <div id="contact" class="row">
         <h2>Contact</h2>
         <p>To get in touch please email <a href="mailto:qemu-devel&#x0040;nongnu.org">qemu-devel&#x0040;nongnu.org</a>
-         and CC Thomas Huth &lt;huth&#x0040;tuxfamily.org&gt;
-         and Kashyap Chamarthy &lt;kashyapc&#x0040;fedoraproject.org&gt;.</p>
+         and CC: Thomas Huth &lt;huth&#x0040;tuxfamily.org&gt;.</p>
       </div>
 
       <hr/>
@@ -712,12 +505,12 @@
           Santa hat added by Stefan Hajnoczi
         </p>
         <p>
-          Website &copy; 2016 QEMU contributors &middot;
+          Website &copy; 2018 QEMU contributors &middot;
           <a href="http://opensource.org/licenses/MIT">MIT License</a>.
           Design based on the
           <a href="/2014/">2014</a>
           website created by Stefan Hajnoczi,
-          and modified for 2016 by Thomas Huth.
+          and modified for 2018 by Thomas Huth.
         </p>
       </footer>
 

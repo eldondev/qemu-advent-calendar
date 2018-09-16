@@ -6,7 +6,7 @@
 
 body {
   padding-bottom: 40px;
-  background-color: #042d05;
+  background-color: #003050;
   color: #f0e0d0;
 }
 
@@ -52,16 +52,16 @@ body {
   z-index: 10;
 }
 .carousel-caption a:link {
-  color: #444;
+  color: #f4c484;
 }
 .carousel-caption a:visited {
-  color: #444;
+  color: #f4c484;
 }
 .carousel-caption a:hover {
-  color: #444;
+  color: #f4c484;
 }
 .carousel-caption a:active {
-  color: #444;
+  color: #f4c484;
 }
 .carousel-caption > img {
   max-width:100%;
@@ -90,10 +90,10 @@ div.featurette
 {
   text-align:center;
   float:left;
-  padding:8px;
+  padding:1px;
   margin:auto;
-  width:540px;
-  height:660px;
+  width:480px;
+  height:560px;
 }
 
 .featurette-divider {
