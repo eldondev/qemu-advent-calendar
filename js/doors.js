@@ -1,7 +1,7 @@
 /*
  * Javascript for handling the doors of the QEMU advent calendar.
  *
- * Copyright (c) 2016 Thomas Huth
+ * Copyright (c) 2018 Thomas Huth
  *
  * Licensed under the MIT license.
  */
@@ -9,7 +9,7 @@
 function set_door_cookie(val) {
     var date = new Date();
     date.setTime(date.getTime() + (26 * 24 * 60 * 60 * 1000));
-    document.cookie = "doors=" + val + ";" + "expires="+ date.toUTCString();
+    document.cookie = "doors2018=" + val + ";" + "expires="+ date.toUTCString();
 }
 
 function get_door_cookie() {
@@ -19,8 +19,8 @@ function get_door_cookie() {
           while (c.charAt(0)==' ') {
                c = c.substring(1);
           }
-          if (c.indexOf("doors") == 0) {
-               return c.substring(6, c.length);
+          if (c.indexOf("doors2018") == 0) {
+               return c.substring(10, c.length);
           }
      }
      return 0;
