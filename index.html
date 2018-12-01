@@ -101,15 +101,22 @@
     <div id="day-1" class="featurette">
      <p>
        <img id="img-day01" src="images/closed-door.png" alt="Day 1"
-        onclick="zonk('day01');" />
+        onclick="opendoor('day01', 'Day 1 - F-Bird');" />
      </p>
      <h2 id="title-day01">Day 1</h2>
      <div id="desc-day01">
-      <p>
-       Image will be available on December 1st.
+      <p class="lead">
+       A game that fits into a 512 bytes boot sector! Written in pure x86
+       assembly language, featuring simply text mode graphics and PC-speaker sound,
+       source code included.
       </p>
+      <p>
+       Size of download is 5 kB.
+      </p>
+      <script>initdoor('day01', 'Day 1 - F-Bird');</script>
      </div>
      <p>
+       <a href="download/day01.tar.xz" class="btn btn-primary btn-lg" role="button">Download</a>
      </p>
     </div>
 
@@ -511,6 +518,11 @@
           <a href="/2014/">2014</a>
           website created by Stefan Hajnoczi,
           and modified for 2018 by Thomas Huth.
+        </p>
+        <p>
+          This website uses cookies to store the state of the doors.
+          We do not use cookies to track you or to collect any personally
+          identifiable information.
         </p>
       </footer>
 
