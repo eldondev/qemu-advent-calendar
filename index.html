@@ -39,7 +39,7 @@
                     <li><a href="/2018/">2018</a></li>
                   </ul>
                 </li>
-                <li class="active"><a href="#day-24">Final day</a></li>
+                <li class="active"><a href="#day-2">Current day</a></li>
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Jump to day <span class="caret"></span></a>
                   <ul class="dropdown-menu" role="menu">
@@ -123,15 +123,23 @@
     <div id="day-2" class="featurette">
      <p>
        <img id="img-day02" src="images/closed-door.png" alt="Day 2"
-        onclick="zonk('day02');" />
+        onclick="opendoor('day02', 'Day 2 - Santa on Xtensa');" />
      </p>
      <h2 id="title-day02">Day 2</h2>
      <div id="desc-day02">
-      <p>
-       Image will be available on December 2nd.
+      <p class="lead">
+       Santa visits Xtensa &ndash; play the game
+       &quot;<a href="https://ifdb.tads.org/viewgame?id=a8l9yzh11dupy0k">Santa's Sleigh Ride</a>&quot;
+       running via <a href="http://frotz.sourceforge.net/">Frotz</a> in QEMU's
+       Xtensa system emulation.
       </p>
+      <p>
+       Size of download is 253 kB.
+      </p>
+      <script>initdoor('day02', 'Day 2 - Santa on Xtensa');</script>
      </div>
      <p>
+       <a href="download/day02.tar.xz" class="btn btn-primary btn-lg" role="button">Download</a>
      </p>
     </div>
 
@@ -499,7 +507,7 @@
 
       <div id="contact" class="row">
         <h2>Contact</h2>
-        <p>To get in touch please email <a href="mailto:qemu-devel&#x0040;nongnu.org">qemu-devel&#x0040;nongnu.org</a>
+        <p>To get in touch please send an e-mail to qemu-devel&#x0040;nongnu.org
          and CC: Thomas Huth &lt;huth&#x0040;tuxfamily.org&gt;.</p>
       </div>
 
@@ -518,6 +526,11 @@
           <a href="/2014/">2014</a>
           website created by Stefan Hajnoczi,
           and modified for 2018 by Thomas Huth.
+        </p>
+        <p>
+          Source code for software that is licensed under the GPL is available
+          on request. Please write an e-mail to Thomas Huth (see contact
+          information above).
         </p>
         <p>
           This website uses cookies to store the state of the doors.
