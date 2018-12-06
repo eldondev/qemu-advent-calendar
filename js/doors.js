@@ -34,7 +34,15 @@ preload_zonk.src = 'images/zonk.png';
 function zonk(id)
 {
      document.getElementById('img-' + id).src = 'images/zonk.png';
-     document.getElementById('desc-' + id).innerHTML = '<p class="lead">Please do not open the doors too early!</p>';
+
+     var d = new Date();
+     if (d.getMonth() == 11 && parseInt(id.substring(3,5)) <= d.getDate()) {
+          document.getElementById('desc-' + id).innerHTML =
+              '<p class="lead">Please reload the page first.</p>';
+     } else {
+          document.getElementById('desc-' + id).innerHTML =
+              '<p class="lead">Please do not open the doors too early!</p>';
+     }
 }
 
 function initdoor(id, titletxt)
