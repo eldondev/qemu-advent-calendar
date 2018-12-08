@@ -39,7 +39,7 @@
                     <li><a href="/2018/">2018</a></li>
                   </ul>
                 </li>
-                <li class="active"><a href="#day-6">Current day</a></li>
+                <li class="active"><a href="#day-7">Current day</a></li>
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Jump to day <span class="caret"></span></a>
                   <ul class="dropdown-menu" role="menu">
@@ -238,15 +238,22 @@
     <div id="day-7" class="featurette">
      <p>
        <img id="img-day07" src="images/closed-door.png" alt="Day 7"
-        onclick="zonk('day07');" />
+        onclick="opendoor('day07', 'Day 7 - Around the m68k globe');" />
      </p>
      <h2 id="title-day07">Day 7</h2>
      <div id="desc-day07">
-      <p>
-       Image will be available on December 7th.
+      <p class="lead">
+       Travel around the globe with Santa in the game &quot;Sanity Clause&quot;,
+       a text adventure running via the AGiliTy interpreter in QEMU's
+       &quot;mcf5208evb&quot; M68k machine emulation.
       </p>
+      <p>
+       Size of download is 2 MB.
+      </p>
+      <script>initdoor('day07', 'Day 7 - Around the m68k globe');</script>
      </div>
      <p>
+       <a href="download/day07.tar.xz" class="btn btn-primary btn-lg" role="button">Download</a>
      </p>
     </div>
 
