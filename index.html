@@ -39,7 +39,7 @@
                     <li><a href="/2018/">2018</a></li>
                   </ul>
                 </li>
-                <li class="active"><a href="#day-8">Current day</a></li>
+                <li class="active"><a href="#day-9">Current day</a></li>
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Jump to day <span class="caret"></span></a>
                   <ul class="dropdown-menu" role="menu">
@@ -131,7 +131,8 @@
        Play the game
        &quot;<a href="https://ifdb.tads.org/viewgame?id=a8l9yzh11dupy0k">Santa's Sleigh Ride</a>&quot;
        running via <a href="http://frotz.sourceforge.net/">Frotz</a> in QEMU's
-       Xtensa system emulation.
+       <a href="https://wiki.qemu.org/Documentation/Platforms/Xtensa">Xtensa</a>
+       system emulation.
       </p>
       <p>
        Size of download is 253 kB.
@@ -178,7 +179,9 @@
        <a href="https://en.wikipedia.org/wiki/Snake_(video_game_genre)">snake
        game</a> that runs on top of the
        <a href="https://en.wikipedia.org/wiki/Open_Firmware">Open Firmware</a>
-       of a ppc64 guest. How many apples can you eat?
+       of a
+       <a href="https://wiki.qemu.org/Documentation/Platforms/POWER">ppc64</a>
+       guest. How many apples can you eat?
       </p>
       <p>
        Size of download is 3 kB.
@@ -223,7 +226,9 @@
       <p class="lead">
        Play the game &quot;120 degrees below zero&quot; running via
        <a href="https://www.scummvm.org/">ScummVM</a> in QEMU's
-       &quot;versatilepb&quot; Arm machine emulation.
+       &quot;versatilepb&quot;
+       <a href="https://wiki.qemu.org/Documentation/Platforms/ARM">Arm</a>
+       machine emulation.
       </p>
       <p>
        Size of download is 11 MB.
@@ -282,18 +287,27 @@
     <div id="day-9" class="featurette">
      <p>
        <img id="img-day09" src="images/closed-door.png" alt="Day 9"
-        onclick="zonk('day09');" />
+        onclick="opendoor('day09', 'Day 9 - Ularn on SH-4');" />
      </p>
      <h2 id="title-day09">Day 9</h2>
      <div id="desc-day09">
-      <p>
-       Image will be available on December 9th.
+      <p class="lead">
+       Discover the
+       <a href="https://github.com/joshbressers/ularn">Caverns of Ularn</a>,
+       a <a href="https://en.wikipedia.org/wiki/Roguelike">rogue-like</a>
+       adventure, running in QEMU via the &quot;r2d&quot;
+       <a href="https://wiki.qemu.org/Documentation/Platforms/SH4">sh4</a>
+       machine emulation.
       </p>
+      <p>
+       Size of download is 4.5 MB.
+      </p>
+      <script>initdoor('day09', 'Day 9 - Ularn on SH-4');</script>
      </div>
      <p>
+       <a href="download/day09.tar.xz" class="btn btn-primary btn-lg" role="button">Download</a>
      </p>
     </div>
-
 
     <div id="day-10" class="featurette">
      <p>
