@@ -39,7 +39,7 @@
                     <li><a href="/2018/">2018</a></li>
                   </ul>
                 </li>
-                <li class="active"><a href="#day-11">Current day</a></li>
+                <li class="active"><a href="#day-12">Current day</a></li>
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Jump to day <span class="caret"></span></a>
                   <ul class="dropdown-menu" role="menu">
@@ -361,15 +361,22 @@
     <div id="day-12" class="featurette">
      <p>
        <img id="img-day12" src="images/closed-door.png" alt="Day 12"
-        onclick="zonk('day12');" />
+        onclick="opendoor('day12', 'Day 12 - QEMU v3.1.0');" />
      </p>
      <h2 id="title-day12">Day 12</h2>
      <div id="desc-day12">
-      <p>
-       Image will be available on December 12th.
+      <p class="lead">
+       No disk image today, but a new release of
+       <a href="https://www.qemu.org/">QEMU</a>: Version 3.1.0 has just been
+       published yesterday &ndash; please download the package and give it a try!
       </p>
+      <p>
+       Size of download is 34 MB.
+      </p>
+      <script>initdoor('day12', 'Day 12 - QEMU v3.1.0');</script>
      </div>
      <p>
+       <a href="https://download.qemu.org/qemu-3.1.0.tar.xz" class="btn btn-primary btn-lg" role="button">Download</a>
      </p>
     </div>
 
