@@ -39,7 +39,7 @@
                     <li><a href="/2018/">2018</a></li>
                   </ul>
                 </li>
-                <li class="active"><a href="#day-14">Current day</a></li>
+                <li class="active"><a href="#day-15">Current day</a></li>
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Jump to day <span class="caret"></span></a>
                   <ul class="dropdown-menu" role="menu">
@@ -431,15 +431,24 @@
     <div id="day-15" class="featurette">
      <p>
        <img id="img-day15" src="images/closed-door.png" alt="Day 15"
-        onclick="zonk('day15');" />
+        onclick="opendoor('day15', 'Day 15 - ASCII-Invaders on PPC');" />
      </p>
      <h2 id="title-day15">Day 15</h2>
      <div id="desc-day15">
-      <p>
-       Image will be available on December 15th.
+      <p class="lead">
+       Need some more action? Try to defend the earth in the game
+       <a href="https://github.com/macdice/ascii-invaders">ASCII-Invaders</a>,
+       running in QEMU's &quot;g3beige&quot; 32-bit
+       <a href="https://wiki.qemu.org/Documentation/Platforms/PowerPC">PowerMac</a>
+       machine emulation.
       </p>
+      <p>
+       Size of download is 2.5 MB.
+      </p>
+      <script>initdoor('day15', 'Day 15 - ASCII-Invaders on PPC');</script>
      </div>
      <p>
+       <a href="download/day15.tar.xz" class="btn btn-primary btn-lg" role="button">Download</a>
      </p>
     </div>
 
