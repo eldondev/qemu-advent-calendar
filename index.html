@@ -39,7 +39,7 @@
                     <li><a href="/2018/">2018</a></li>
                   </ul>
                 </li>
-                <li class="active"><a href="#day-19">Current day</a></li>
+                <li class="active"><a href="#day-20">Current day</a></li>
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Jump to day <span class="caret"></span></a>
                   <ul class="dropdown-menu" role="menu">
@@ -549,15 +549,22 @@
     <div id="day-20" class="featurette">
      <p>
        <img id="img-day20" src="images/closed-door.png" alt="Day 20"
-        onclick="zonk('day20');" />
+        onclick="opendoor('day20', 'Day 20 - Old games on OpenRISC');" />
      </p>
      <h2 id="title-day20">Day 20</h2>
      <div id="desc-day20">
-      <p>
-       Image will be available on December 20th.
+      <p class="lead">
+       Here are some old text adventures for you to play that are running in QEMU's
+       <a href="https://wiki.qemu.org/Documentation/Platforms/OpenRISC">OpenRISC</a>
+       (or1k) emulation.
       </p>
+      <p>
+       Size of download is 2.3 MB.
+      </p>
+      <script>initdoor('day20', 'Day 20 - Old games on OpenRISC');</script>
      </div>
      <p>
+       <a href="download/day20.tar.xz" class="btn btn-primary btn-lg" role="button">Download</a>
      </p>
     </div>
 
