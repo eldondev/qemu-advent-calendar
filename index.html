@@ -39,7 +39,7 @@
                     <li><a href="/2018/">2018</a></li>
                   </ul>
                 </li>
-                <li class="active"><a href="#day-20">Current day</a></li>
+                <li class="active"><a href="#day-21">Current day</a></li>
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Jump to day <span class="caret"></span></a>
                   <ul class="dropdown-menu" role="menu">
@@ -571,15 +571,24 @@
     <div id="day-21" class="featurette">
      <p>
        <img id="img-day21" src="images/closed-door.png" alt="Day 21"
-        onclick="zonk('day21');" />
+        onclick="opendoor('day21', 'Day 21 - Santa&rsquo;s L4Re packages');" />
      </p>
      <h2 id="title-day21">Day 21</h2>
      <div id="desc-day21">
-      <p>
-       Image will be available on December 21th.
+      <p class="lead">
+       QEMU 3.1 greatly improved support for virtualization on
+       <a href="https://wiki.qemu.org/Documentation/Platforms/ARM">aarch64</a>.
+       This image shows this achievement by running a Linux VM (with some
+       goodies, of course) on the
+       <a href="https://github.com/kernkonzept/manifest/wiki">L4Re hypervisor</a>.
       </p>
+      <p>
+       Contributed by Jakub Jermář. Size of download is 9 MB.
+      </p>
+      <script>initdoor('day21', 'Day 21 - Santa&rsquo;s L4Re packages');</script>
      </div>
      <p>
+       <a href="download/day21.tar.xz" class="btn btn-primary btn-lg" role="button">Download</a>
      </p>
     </div>
 
