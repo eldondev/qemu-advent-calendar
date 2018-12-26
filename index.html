@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=540, initial-scale=1"/>
+    <meta name="viewport" content="width=480, initial-scale=1"/>
 
     <title>QEMU Advent Calendar 2018</title>
 
@@ -39,7 +39,7 @@
                     <li><a href="/2018/">2018</a></li>
                   </ul>
                 </li>
-                <li class="active"><a href="#day-21">Current day</a></li>
+                <li class="active"><a href="#day-22">Current day</a></li>
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Jump to day <span class="caret"></span></a>
                   <ul class="dropdown-menu" role="menu">
@@ -595,15 +595,24 @@
     <div id="day-22" class="featurette">
      <p>
        <img id="img-day22" src="images/closed-door.png" alt="Day 22"
-        onclick="zonk('day22');" />
+        onclick="opendoor('day22', 'Day 22 - Ri-Li on MIPS64');" />
      </p>
      <h2 id="title-day22">Day 22</h2>
      <div id="desc-day22">
-      <p>
-       Image will be available on December 22th.
+      <p class="lead">
+       Did you ever play with a wooden train toy in your youth? Time to revive
+       those memories with <a href="http://ri-li.sourceforge.net/">Ri-Li</a>
+       running in an emulated &ldquo;malta&rdquo;
+       <a href="https://wiki.qemu.org/Documentation/Platforms/MIPS">MIPS64</a>
+       machine.
       </p>
+      <p>
+       Size of download is 16.5 MB.
+      </p>
+      <script>initdoor('day22', 'Day 22 - Ri-Li on MIPS64');</script>
      </div>
      <p>
+       <a href="download/day22.tar.xz" class="btn btn-primary btn-lg" role="button">Download</a>
      </p>
     </div>
 
