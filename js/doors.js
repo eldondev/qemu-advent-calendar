@@ -28,7 +28,6 @@ function get_door_cookie() {
 
 var doors = 0 + get_door_cookie();
 
-/*
 var preload_zonk = new Image();
 preload_zonk.src = 'images/zonk.png';
 function zonk(id)
@@ -44,7 +43,6 @@ function zonk(id)
               '<p class="lead">Please do not open the doors too early!</p>';
      }
 }
-*/
 
 function initdoor(id, titletxt)
 {
